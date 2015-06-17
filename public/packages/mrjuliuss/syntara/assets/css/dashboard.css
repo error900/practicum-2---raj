@@ -1,0 +1,27 @@
+/* Dashboard */
+
+.dashboard {
+margin-top:5px;
+}
+
+.dashboard-inner {
+background-color:#FFF;
+padding:10px;
+margin-bottom:5px;
+}
+
+.strong {
+font-weight: bold;
+}
+
+.custom-td1 {
+width:260px;
+}
+
+.custom-td2 {
+width:60px;
+}
+
+.custom-btn {
+width:80px;
+}
