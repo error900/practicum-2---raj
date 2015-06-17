@@ -4,6 +4,28 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* Typography */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PTSerif Caption';
+    src: url('../fonts/PTSerif-Caption.woff') format('woff');
+}
+
 /*====================================CUSTOM================================*/
 a {
 	-o-transition: all .3s;
@@ -32,8 +54,12 @@ color: #CECECE;
 color: #313131;
 }
 
+header {
+	padding-bottom: 30px;
+}
+
 header, .panel, .services-banner, .product-image {
-box-shadow: 0px 5px 5px #888888;
+box-shadow: 0px 5px 5px #bdc3c7;
 }
 
 .scroll-top-wrapper {
@@ -431,12 +457,12 @@ h1.page-header, h2.page-header, h3.page-header, h3.custom-header, h4.custom-head
 html,
 body {
     height: 100%;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: 'Open Sans', Helvetica, sans-serif;
 	color: #6a6565;
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 90px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -523,4 +549,102 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+/* June 17, 2015 */
+
+.header1 {
+	margin: 20px 0 30px 0;
+	font-size: 22px;
+	font-weight: 800;
+	color: #34495e;
+	text-transform: uppercase;
+}
+
+.bg-index {
+	/*background-color: rgb(0, 14, 49);*/
+	background-image: linear-gradient( to right, rgb(0, 14, 49), #000414 );
+}
+
+.bg-plain {
+	background-color: #fff !important;
+}
+
+@media (min-width:768px){
+
+	body {
+		padding-top: 80px;
+	}
+
+	ul.nav-position-abs {
+		position: absolute;
+		right: 65px;
+		bottom: 0;
+		float: none !important;
+	}
+
+	.navbar-brand {
+		font-size: 24px !important;
+	}
+
+	.nav-wide {
+		padding: 15px;
+	}
+
+	.navbar-inverse .navbar-nav>li>a:focus,
+	.navbar-inverse .navbar-nav>li>a:hover {
+		background-color: transparent !important;
+	}
+
+	.rajtech-bg-image {
+		max-width: 1000px;
+		height: 460px;
+		margin: auto;
+	}
+}
+
+.navbar-inverse {
+  background-color: rgba(44, 62, 80, 0.8);
+  border-color: #080808;
+}
+
+.navbar-brand {
+	font-size: 16px;
+	font-weight: 900;
+	color: #ecf0f1 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-size: 13px !important;
+	color: #bdc3c7 !important;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px #34495E;
+}
+
+@media (max-width: 767px) {
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: #ecf0f1 !important;
+	}
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: #fff !important;
+	}
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #fff !important;
+	background-color: #4aa3df;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent !important;
+}
+
+.services-panels {
+	padding-top: 30px;
 }

@@ -3,14 +3,14 @@
 
 @include('Pages.header-snippet')
 
-<body>
+<body class="bg-index">
 
 @include('Pages.header-nav-snippet')
 
     <header id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill"><img class="img-responsive" src="Assets/img/slider/BG-Image.jpg" /></div>
+                <div class="fill"><img class="img-responsive rajtech-bg-image" src="Assets/img/slider/bg-rajtech-services.jpg" /></div>
 				
                 <div class="carousel-caption">
 				
@@ -39,11 +39,13 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid bg-plain">
 
         <!-- Marketing Icons Section -->
-        <div class="row">
-			<hr />
+        <div class="row services-panels">
+            <div class="col-md-12">
+                <h1 class="text-center header1">Products &amp; Services</h1>
+            </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -123,7 +125,6 @@
 		@endif
         <!-- /.row -->
 
-        <hr>
 
 @include('Pages.footer-snippet')
 		
