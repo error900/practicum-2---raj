@@ -53,7 +53,7 @@
                     </div>
                     <div class="panel-body">
                         <p>We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
-                        <a href="{{ URL::to('information-technology') }}" class="btn btn-default">Learn More</a>
+                        <a href="{{ URL::to('information-technology') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Imaging Solutions mean custom office equipment packages to address your specific wants and needs. By combining quality digital printer, copier, scanner and fax hardware, with our excellent customer support.</p>
-                        <a href="{{ URL::to('imaging-solutions') }}" class="btn btn-default">Learn More</a>
+                        <a href="{{ URL::to('imaging-solutions') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Our diverse array of portable and mobile two-way radios better enable you to efficiently coordinate and communicate with your on-the-go workforce, regardless of whether you have a small shop or a large nationwide business.</p>
-                        <a href="{{ URL::to('two-way-radio-communication') }}" class="btn btn-default">Learn More</a>
+                        <a href="{{ URL::to('two-way-radio-communication') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Our expertise includes access control, video surveillance, integrated physical/logical security and intrusion alarms. Our strong experience with 100 percent IP-based systems that lower cost and improve network flexibility and scalability.</p>
-                        <a href="{{ URL::to('security-and-surveillance') }}" class="btn btn-default">Learn More</a>
+                        <a href="{{ URL::to('security-and-surveillance') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Solar technologies are an effective and increasingly economic choice as conventional energy prices rise. We have the capabilities to develop, construct, operate and optimise the operation of solar powered facilities.</p>
-                        <a href="{{ URL::to('renewable-energy') }}" class="btn btn-default">Learn More</a>
+                        <a href="{{ URL::to('renewable-energy') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -129,6 +129,25 @@
 @include('Pages.footer-snippet')
 		
 	<script src="{{ asset('Assets/js/services-icons.js') }}"></script>
+    // <script>
+    //     $('.panel-default')
+    //         .on('mouseenter', function(){
+    //             var defaultpanel = $(this);
+    //             defaultpanel.stop(true, true).animate({ 
+    //                 margin: -10,
+    //                 width: "+=20",
+    //                 height: "+=20"
+    //             }, 'fast');
+    //         })
+    //         .on('mouseleave', function(){
+    //             var defaultpanel = $(this);
+    //             defaultpanel.stop(true, true).animate({ 
+    //                 margin: 0,
+    //                 width: "-=20",
+    //                 height: "-=20"
+    //             }, 'fast');
+    //         })
+    // </script>
 
 </body>
 
