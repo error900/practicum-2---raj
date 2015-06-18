@@ -53,6 +53,8 @@
                     </div>
                     <div class="panel-body">
                         <p>We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+                    </div>
+                    <div class="panel-footer text-right">
                         <a href="{{ URL::to('information-technology') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
@@ -64,6 +66,8 @@
                     </div>
                     <div class="panel-body">
                         <p>Imaging Solutions mean custom office equipment packages to address your specific wants and needs. By combining quality digital printer, copier, scanner and fax hardware, with our excellent customer support.</p>
+                    </div>
+                    <div class="panel-footer text-right">
                         <a href="{{ URL::to('imaging-solutions') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
@@ -75,6 +79,8 @@
                     </div>
                     <div class="panel-body">
                         <p>Our diverse array of portable and mobile two-way radios better enable you to efficiently coordinate and communicate with your on-the-go workforce, regardless of whether you have a small shop or a large nationwide business.</p>
+                    </div>
+                    <div class="panel-footer text-right">
                         <a href="{{ URL::to('two-way-radio-communication') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
@@ -86,6 +92,8 @@
                     </div>
                     <div class="panel-body">
                         <p>Our expertise includes access control, video surveillance, integrated physical/logical security and intrusion alarms. Our strong experience with 100 percent IP-based systems that lower cost and improve network flexibility and scalability.</p>
+                    </div>
+                    <div class="panel-footer text-right">
                         <a href="{{ URL::to('security-and-surveillance') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
@@ -97,6 +105,8 @@
                     </div>
                     <div class="panel-body">
                         <p>Solar technologies are an effective and increasingly economic choice as conventional energy prices rise. We have the capabilities to develop, construct, operate and optimise the operation of solar powered facilities.</p>
+                    </div>
+                    <div class="panel-footer text-right">
                         <a href="{{ URL::to('renewable-energy') }}" class="btn btn-default learnmore-btn">Learn More</a>
                     </div>
                 </div>
@@ -108,7 +118,7 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Products</h2>
+                <h2 class="text-center header1">Products</h2>
             </div>
 			<hr />
 			@foreach ($Product as $list)

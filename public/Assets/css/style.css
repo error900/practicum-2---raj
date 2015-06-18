@@ -546,11 +546,7 @@ header.carousel .fill {
     font-style: italic;
 }
 
-/* Footer Styles */
 
-footer {
-    margin: 50px 0;
-}
 
 /* Responsive Styles */
 
@@ -605,7 +601,7 @@ footer {
 	}
 
 	.navbar-brand {
-		font-size: 24px !important;
+		font-size: 20px !important;
 	}
 
 	.nav-wide {
@@ -648,6 +644,15 @@ footer {
 		max-height: 200px;
 	}
 
+	.panel-default:hover {
+		border: 1px solid #7f8c8d !important;
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-ms-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
+	}
+
 	.panel-default>.panel-heading {
 		padding: 10px 10px 0 10px !important;
 		background-color: transparent;
@@ -659,10 +664,6 @@ footer {
 		font-size: 16px !important;
 	}
 
-	.panel-default>.panel-body {
-		padding: 0 15px 15px 15px;
-	}
-
 	.panel-default>.panel-body p {
 		font-family: 'Open Sans Semibold' !important;
 		font-size: 13px !important;
@@ -671,11 +672,13 @@ footer {
 	/* buttons */
 
 	.btn.btn-default.learnmore-btn {
+		position: absolute;
+		right: 30px;
+		bottom: 40px;
 		padding: 5px 10px;
 		background-color: #fff;
 		border-color: #2980b9;
 		color: #2980b9;
-		float: right;
 		font-size: 12px;
 		text-transform: lowercase;
 	}
@@ -692,12 +695,14 @@ footer {
 }
 
 .navbar-brand {
+	font-family: 'Open Sans Semibold';
 	font-size: 16px;
 	font-weight: 900;
 	color: #ecf0f1 !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
+	padding-left: 30px;
 	font-family: 'PT Sans Narrow Bold';
 	font-size: 16px;
 	color: #fff !important;
@@ -749,11 +754,21 @@ footer {
 }
 
 .panel-default>.panel-body {
-	padding: 0 15px 15px 15px;
+	padding: 0 15px 0 15px;
 }
 
 .panel-default>.panel-body p {
 	font-size: 12px;
+}
+
+.panel-default>.panel-footer {
+	padding: 10px;
+	background-color: #fff;
+	border: 0;
+}
+
+.panel-default>.panel-footer a {
+	padding: 10px;
 }
 
 .services-panels {
@@ -773,7 +788,6 @@ footer {
 	background-color: #fff;
 	border-color: #2980b9;
 	color: #2980b9;
-	float: right;
 	font-size: 12px;
 	text-transform: lowercase;
 }
@@ -781,4 +795,12 @@ footer {
 .btn.btn-default.learnmore-btn:hover {
 	color: #fff;
 	background-color: #2980b9;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+    font-size: 12px;
+    color: #ecf0f1;
 }
