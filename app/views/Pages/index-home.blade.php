@@ -10,7 +10,7 @@
     <header id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="width: 1000px; height: 460px;"><!-- <img class="img-responsive rajtech-bg-image" src="Assets/img/slider/bg-rajtech-services.jpg" /> --></div>
+                <div class="fill"><img class="img-responsive rajtech-bg-image" src="Assets/img/slider/bg-rajtech-services.png" /></div>
 				
                 <div class="carousel-caption">
 				
@@ -40,7 +40,6 @@
 
     <!-- Page Content -->
     <div class="container-fluid bg-plain">
-
         <!-- Marketing Icons Section -->
         <div class="row services-panels">
             <div class="col-md-12">
@@ -85,7 +84,7 @@
                     </div>
                 </div>
             </div>
-			<div class="col-md-4">
+            <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span></i>Security &amp; Surveillance Services</h4>
@@ -112,34 +111,36 @@
                 </div>
             </div>
         </div>
-        <!-- /.row -->
+    </div>
 
-        <!-- Products Section -->
+    <!-- /.row -->
 
+    <!-- Products Section -->
+
+    <div class="container-fluid bg-plain">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="text-center header1">Products</h2>
             </div>
-			<hr />
-			@foreach ($Product as $list)
+            <hr />
+            @foreach ($Product as $list)
             <div class="col-md-4 col-sm-6">
-				<center><span>{{ $list->brand }} - {{ $list->model }}</span></center>
+                <center><span>{{ $list->brand }} - {{ $list->model }}</span></center>
                 <a href="{{ URL::to('product-item-' . $list->id) }}">
                     <img class="panel img-responsive img-portfolio img-hover" src="{{ asset('Uploads/' . $list->image_1) }}" alt="{{ $list->brand }} - {{ $list->model }}">
                 </a>
             </div>
-			@endforeach
+            @endforeach
         </div>
 		@if (Session::has('message-products'))
 		<div class="alert alert-info">{{ Session::get('message-products') }}</div>
 		@endif
-        <!-- /.row -->
-
+    </div>
 
 @include('Pages.footer-snippet')
 		
 	<script src="{{ asset('Assets/js/services-icons.js') }}"></script>
-    // <script>
+    <script>
     //     $('.panel-default')
     //         .on('mouseenter', function(){
     //             var defaultpanel = $(this);

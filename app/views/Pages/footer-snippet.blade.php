@@ -8,9 +8,22 @@
     <div class="container-fluid">
         <footer>
             <div class="row">
-                <div class="col-lg-12">
-                    <p style="float: left;">Copyright &copy; RAJ. Technologies Inc. 2015</p>
-                    <p style="float: right;"><a href="{{ URL::to('home') }}">Home</a> | <a href="{{ URL::to('about-us') }}">About</a> | <a href="{{ URL::to('services-page') }}">Services</a> | <a href="{{ URL::to('contact-page') }}">Contact</a> | <a href="{{ URL::to('career-page') }}">Careers</a> | <a href="{{ URL::to('dashboard') }}">Login</a></p>
+                <div class="col-md-9">
+                    <ul class="nav navbar-nav nav-footer text-center">
+                        <li><a href="{{ URL::to('home') }}">Home</a></li>
+                        <div class="hr-nav-line hidden-lg hidden-md"></div>
+                        <li><a href="{{ URL::to('about-us') }}">About</a></li>
+                        <div class="hr-nav-line hidden-lg hidden-md"></div>
+                        <li><a href="{{ URL::to('services-page') }}">Services</a></li>
+                        <div class="hr-nav-line hidden-lg hidden-md"></div>
+                        <li><a href="{{ URL::to('contact-page') }}">Contact</a></li>
+                        <div class="hr-nav-line hidden-lg hidden-md"></div>
+                        <li><a href="{{ URL::to('career-page') }}">Careers</a></li>
+                        <li><a href="{{ URL::to('dashboard') }}" class="btn btn-default login-btn">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="copyright">Copyright &copy; RAJ. Technologies Inc. 2015</p>
                 </div>
             </div>
         </footer>
