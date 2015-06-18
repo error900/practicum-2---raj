@@ -10,7 +10,7 @@
     <header id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill"><img class="img-responsive rajtech-bg-image" src="Assets/img/slider/bg-rajtech-services.jpg" /></div>
+                <div class="fill" style="width: 1000px; height: 460px;"><!-- <img class="img-responsive rajtech-bg-image" src="Assets/img/slider/bg-rajtech-services.jpg" /> --></div>
 				
                 <div class="carousel-caption">
 				
@@ -49,7 +49,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-users"></i> Information Technology(IT) Services</h4>
+                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span>Information Technology(IT) Services</h4>
                     </div>
                     <div class="panel-body">
                         <p>We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
@@ -60,7 +60,7 @@
 			<div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-file-image-o"></i> Imaging Solution Services</h4>
+                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span></i>Imaging Solution Services</h4>
                     </div>
                     <div class="panel-body">
                         <p>Imaging Solutions mean custom office equipment packages to address your specific wants and needs. By combining quality digital printer, copier, scanner and fax hardware, with our excellent customer support.</p>
@@ -71,7 +71,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-wifi"></i> 2-Way Radio Communication Services</h4>
+                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span>2-Way Radio Communication Services</h4>
                     </div>
                     <div class="panel-body">
                         <p>Our diverse array of portable and mobile two-way radios better enable you to efficiently coordinate and communicate with your on-the-go workforce, regardless of whether you have a small shop or a large nationwide business.</p>
@@ -82,7 +82,7 @@
 			<div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-video-camera"></i> Security &amp; Surveillance Services</h4>
+                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span></i>Security &amp; Surveillance Services</h4>
                     </div>
                     <div class="panel-body">
                         <p>Our expertise includes access control, video surveillance, integrated physical/logical security and intrusion alarms. Our strong experience with 100 percent IP-based systems that lower cost and improve network flexibility and scalability.</p>
@@ -93,7 +93,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-recycle"></i> Renewable Energy Services</h4>
+                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span>Renewable Energy Services</h4>
                     </div>
                     <div class="panel-body">
                         <p>Solar technologies are an effective and increasingly economic choice as conventional energy prices rise. We have the capabilities to develop, construct, operate and optimise the operation of solar powered facilities.</p>
