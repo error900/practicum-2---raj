@@ -600,6 +600,14 @@ header.carousel .fill {
 		/*padding-top: 80px;*/
 	}
 
+	.rajtech-bg-image {
+		background-image: url('../img/slider/bg-rajtech-services1.png');
+		background-position-y: 80px !important;
+		width: 100%;
+		height: 435px !important;
+		position: relative;
+	}
+
 	.nav-position-abs {
 		position: absolute;
 		right: 65px;
@@ -632,12 +640,47 @@ header.carousel .fill {
 		background-color: transparent !important;
 		border-bottom: 2px solid #3498db;
 		color: #fff;
-		-webkit-transition: all 0.5s ease-in-out;
+/*		-webkit-transition: all 0.5s ease-in-out;
 		-moz-transition: all 0.5s ease-in-out;
 		-ms-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
-		transition: all 0.5s ease-in-out;	
+		transition: all 0.5s ease-in-out;*/	
 	}
+
+	.company-address {
+		margin-right: 10%;
+		font-size: 11px;
+		float: right;
+	}
+
+/*	.social .nav.navbar-nav {
+		position: absolute;
+		top: 0;
+		right: 30px;
+		line-height: 1;
+	}
+
+	.social .nav.navbar-nav > li {
+	}
+
+	.social .nav.navbar-nav > li > a {
+		padding: 7px;
+	}
+
+	.social .nav.navbar-nav > li > a.fb {
+		background-image: url('../img/facebook.png');
+		background-repeat: no-repeat;
+		padding: 15px;
+		background-position-y: 16px;
+		border: 0;
+
+	}
+
+	.social .nav.navbar-nav > li > a.fb:hover {
+		background-position-y: -16px;
+		text-decoration: none;
+
+	}*/
 
 	/* panels */
 
@@ -716,9 +759,9 @@ header.carousel .fill {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: contain;
-	background-position-y: 80px;
+	background-position-y: 50px;
 	width: 100%;
-	height: 435px;
+	height: 129px;
 	background-color: #000028;
 	position: relative;
 }
@@ -745,19 +788,29 @@ header.carousel .fill {
 	text-transform: uppercase;
 }
 
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: rgba(8, 8, 8, 0.8);
+}
+
 @media (max-width: 767px) {
 
 	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-		color: #ecf0f1 !important;
+		color: #fff !important;
+		padding-left: 50px;
+		font-size: 14px;
+		text-shadow: 0px 1px 0px #34495E;
 	}
 
 	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-		color: #fff !important;
+		background-color: rgba(41, 128, 185, 0.7);
 	}
 }
 
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-	background-color: #4aa3df;
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+	background-color: rgba(41, 128, 185, 0.7);
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {

@@ -14,6 +14,14 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="social text-right hidden-xs hidden-sm">
+                    <p class="company-address">#7 Labsan St. Baguio City</p>
+                    <!-- <ul class="nav navbar-nav">
+                        <li><a href="#" class="fb"></a>facebook</li>
+                        <li><a href="#" class="twtr"></a>twitter</li>
+                        <li><a href="#" class="gml"></a>email</li>
+                    </ul> -->
+                </div>
                 <ul class="nav navbar-nav navbar-right nav-position-abs">
                     <li>
                         <a href="{{ URL::to('about-us') }}">About</a>
