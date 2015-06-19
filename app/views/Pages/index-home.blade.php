@@ -7,31 +7,30 @@
 
 @include('Pages.header-nav-snippet')
 
+    <div class="rajtech-bg-image">
+        <div class="row"></div>
+    </div>
     <header id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill"><img class="img-responsive rajtech-bg-image" src="Assets/img/slider/bg-rajtech-services.png" /></div>
 				
                 <div class="carousel-caption">
-				
-				<a href="{{ URL::to('two-way-radio-communication') }}">
-				<div class="icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"><!-- <img id="image-icon1" src="{{ asset('Assets/img/slider/') }}" width="160px" height="160px" /> --></div>
-				</a>
-				<a href="{{ URL::to('imaging-solutions') }}">
-				<div class="icon2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"><!-- <img id="image-icon2" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
-				</a>
-				<a href="{{ URL::to('information-technology') }}">
-				<div class="icon3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"><!-- <img id="image-icon3" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
-				</a>
-				<a href="{{ URL::to('security-and-surveillance') }}">
-				<div class="icon4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"><!-- <img id="image-icon4" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
-				</a>
-				<a href="{{ URL::to('renewable-energy') }}">
-				<div class="icon5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"><!-- <img id="image-icon5" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
-				</a>
-				
-				<p style="color: #0066ff;" class="text-caption" id="text-caption"></p>
-				
+    				<a href="{{ URL::to('two-way-radio-communication') }}">
+    				<div class="icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"><!-- <img id="image-icon1" src="{{ asset('Assets/img/slider/') }}" width="160px" height="160px" /> --></div>
+    				</a>
+    				<a href="{{ URL::to('imaging-solutions') }}">
+    				<div class="icon2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"><!-- <img id="image-icon2" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				</a>
+    				<a href="{{ URL::to('information-technology') }}">
+    				<div class="icon3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"><!-- <img id="image-icon3" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				</a>
+    				<a href="{{ URL::to('security-and-surveillance') }}">
+    				<div class="icon4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"><!-- <img id="image-icon4" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				</a>
+    				<a href="{{ URL::to('renewable-energy') }}">
+    				<div class="icon5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"><!-- <img id="image-icon5" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				</a>
+    				<p style="color: #0066ff;" class="text-caption" id="text-caption"></p>
                 </div>
 				
             </div>

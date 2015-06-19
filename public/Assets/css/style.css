@@ -478,10 +478,12 @@ body {
     height: 100%;
 	font-family: 'PT Sans', Helvetica, sans-serif;
 	color: #6a6565;
+	background-image: url('../img/3px-tile.png');
+	background-color: #000028;	
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+   /* padding-top: 50px;*/ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -577,9 +579,9 @@ header.carousel .fill {
 }
 
 .bg-index {
-	background-color: #000028;
+	/*background-color: #000028;*/
 	/*background-image: linear-gradient( to right, rgb(0, 14, 49), #000414 );*/
-	background-image: url('../img/bright-squares.png');
+	/*background-image: url('../img/3px-tile.png');*/
 }
 
 .bg-plain {
@@ -595,7 +597,7 @@ header.carousel .fill {
 @media (min-width:768px){
 
 	body {
-		padding-top: 80px;
+		/*padding-top: 80px;*/
 	}
 
 	.nav-position-abs {
@@ -635,12 +637,6 @@ header.carousel .fill {
 		-ms-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;	
-	}
-
-	.rajtech-bg-image {
-		max-width: 1000px;
-		height: 460px;
-		margin: auto;
 	}
 
 	/* panels */
@@ -715,8 +711,21 @@ header.carousel .fill {
 	}
 }
 
+.rajtech-bg-image {
+	background-image: url('../img/slider/bg-rajtech-services1.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	background-position-y: 80px;
+	width: 100%;
+	height: 435px;
+	background-color: #000028;
+	position: relative;
+}
+
+
 .navbar-inverse {
-  background-color: rgba(53, 64, 79, 0.7);;
+  background-color: rgba(0, 0, 40, 0.8);
   border-color: #080808;
 }
 
@@ -799,6 +808,7 @@ header.carousel .fill {
 
 .services-panels {
 	padding-top: 15px;
+	border-top: 25px solid #2c3e50;
 }
 
 .service-panel-icon img {
