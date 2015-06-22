@@ -28,6 +28,9 @@
 		
         <!-- Service Tabs -->
         <div class="row service-page">
+        	<div class="col-md-12">
+                <h1 class="text-center header1">Products &amp; Services</h1>
+            </div>
             <div class="col-lg-12">
                 <ul onclick="tabScrollDown()" id="myTab" class="nav nav-tabs nav-justified">
                     <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-arrow-right"></i>Information Technology</a>
