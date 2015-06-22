@@ -7,11 +7,10 @@
 body {
     font-size: 13px;
     overflow-x: hidden;
-    background-image: url('../../../../../Assets/img/pattern.jpg');
+    background-color: #fff;
     color: #747678;
     font-weight: 300;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.0004);
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 [class^="glyphicon-"],
@@ -20,13 +19,6 @@ body {
     height: 14px;
     margin-top: 1px;
     line-height: 14px;
-}
-
-a {
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
 }
 
 a:hover{
@@ -47,13 +39,6 @@ a:hover{
   }
 }
 
-.login {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 20px;
-	box-shadow: 0px 0px 5px #888888;
-}
-
 .container {
     width: 100%;
     max-width: 100%;
@@ -70,24 +55,73 @@ a:hover{
     border-radius: 0px;
 }
 
-.navbar-inverse {
+.navbar.main-bar{
+    background-color: #b94a48;
+}
+
+.navbar-default {
     border: none;
 }
 
-.navbar-inverse .navbar-brand:hover{
-    color: #0066ff;
+.navbar-default .navbar-nav > li >a {
+    color: #fff;
 }
 
-.navbar-inverse .navbar-toggle {
-border-color: #222;
+.navbar-default .navbar-brand {
+    color: #fff;
 }
 
-.navbar-inverse .navbar-brand {
-color: #CECECE;
+.navbar-default .navbar-brand:hover{
+    color: #fff;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-color: #CECECE;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #b94a48;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #b94a48;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #b94a48;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #b94a48;
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+
+.main-bar .dropdown-menu{
+    background-color: #b94a48;
+}
+
+.main-bar .dropdown-menu > li > a:hover,
+.main-bar .dropdown-menu > li > a:focus {
+    background-color: #b93a48;
+    background-image: none;
+}
+
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
+    background-color: #b94a48;
 }
 
 .ajax-loader {
@@ -107,7 +141,7 @@ color: #CECECE;
 
 /** Breadcrumb part **/
 #breadcrumb {
-    background-color: #515151;
+    background-color: #2b2b2b;
     border-bottom: 1px solid #d6d6d6;
     padding-left: 10px;
 }
