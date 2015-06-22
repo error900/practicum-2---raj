@@ -3,7 +3,7 @@
 
 @include('Pages.header-snippet')
 
-<body class="bg-index">
+<body class="index">
 
 @include('Pages.header-nav-snippet')
 
@@ -118,6 +118,7 @@
 
     <div class="container-fluid bg-plain">
         <div class="row">
+            <div class="hr-row-line"></div>
             <div class="col-lg-12">
                 <h2 class="text-center header1">Products</h2>
             </div>
@@ -135,6 +136,7 @@
 		<div class="alert alert-info">{{ Session::get('message-products') }}</div>
 		@endif
     </div>
+    <!-- /.container -->
 
 @include('Pages.footer-snippet')
 		

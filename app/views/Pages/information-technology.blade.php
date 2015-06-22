@@ -8,14 +8,13 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
+        <div class="row breadcrumb-nav">
             <div class="col-lg-12">
-				<hr />
                 <ol class="breadcrumb">
-                    <li><a href="{{ URL::to('home') }}">Home</a>
+                    <li><a href="{{ URL::to('home') }}"><i class="fa fa-home"></i>Home</a>
                     </li>
 					<li><a href="{{ URL::to('services-page') }}">Services</a>
                     </li>
@@ -25,7 +24,7 @@
         </div>
         <!-- /.row -->
 
-        <div class="row">
+        <div class="row service-page">
             <div class="col-lg-12">
                 <h4 class="services-heading">Software Development & Support</h4>
                 <p class="services-definition">The Support Tools Team supports and develops IT and Manufacturing applications for internal IT teams and business customers for the clients of RAJ. These applications include hardware & software asset management, ticketing systems, change management, knowledge base, dashboards, and various web applications. - <a class="btn btn-default btn-xs" href="{{ URL::to('service-get-quote/Software_Development_&_Support') }}" role="button">Contact Us</a></p>
@@ -39,9 +38,7 @@
 				<p class="services-definition">It is responsible for providing support in network security on DataCenter's by maintaining updated Virus and Malware protection for detecting and preventing Denial of Service attacks from outside sources. And also responsible for giving assistance to Network Administrators. - <a class="btn btn-default btn-xs" href="{{ URL::to('service-get-quote/Network_Security_Support') }}" role="button">Contact Us</a></p>
             </div>
         </div>
-
-        <hr>
-
+    </div>  
 @include('Pages.footer-snippet')
 
 </body>

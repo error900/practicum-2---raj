@@ -8,14 +8,13 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
+        <div class="row breadcrumb-nav">
             <div class="col-lg-12">
-				<hr />
                 <ol class="breadcrumb">
-                    <li><a href="{{ URL::to('home') }}">Home</a>
+                    <li><a href="{{ URL::to('home') }}"><i class="fa fa-home"></i>Home</a>
                     </li>
 					<li><a href="{{ URL::to('services-page') }}">Services</a>
                     </li>
@@ -25,28 +24,51 @@
         </div>
         <!-- /.row -->
 
-        <div class="row">
+        <div class="row service-page">
             <div class="col-lg-12">
                 <h4 class="services-heading">Service & Repairs</h4>
                 <p class="services-definition">We delivers whatever level of services you need for your two-way radios. Whether it’s a simple repair, system deployment, a permanent install, preventive maintenance, or a rental event, We are the wireless solution. We’re here to help meet all of your wireless communications needs.<br /><br />
-				<ul>
-					<li>Rentals</li>
-					 - Short or long-term rentals with full customer service
-					<li>Repairs & Field Services</li>
-					 - Repairs and maintenance wherever you need them
-					<li>Installation & Deployment</li>
-					 - Trust your system to the installation experts
-					<li>Extended Warranties</li>
-					 - Peace-of-mind and added product performance
-					<li>Service Level Agreements</li>
-					 - Ease budget pressures and save money
-					<li>Preventive Maintenance</li>
-					 - Affordable plans to protect and extend service life
-					<li>Consulting & Customization</li>
-					 - Expertise to provide the best two-way radio systems
-					<li>Managed Services</li>
-					 - Monitoring and managing your mission-critical wireless networks 
-				</ul>
+				<ul class="service-list">
+							<li>
+								<h4>Rentals</h4>
+								<p>Short or long-term rentals with full customer service</p>
+							</li>
+							
+							<li>
+								<h4>Repairs & Field Services</h4>
+								<p>Repairs and maintenance wherever you need them</p>
+							</li>
+							
+							<li>
+								<h4>Installation & Deployment</h4>
+								<p>Trust your system to the installation experts</p>
+							</li>
+							
+							<li>
+								<h4>Extended Warranties</h4>
+								<p>Peace-of-mind and added product performance</p>
+							</li>
+							
+							<li>
+								<h4>Service Level Agreements</h4>
+								<p>Ease budget pressures and save money</p>
+							</li>
+							
+							<li>
+								<h4>Preventive Maintenance</h4>
+								<p>Affordable plans to protect and extend service life</p>
+							</li>
+							
+							<li>
+								<h4>Consulting & Customization</h4>
+								<p>Expertise to provide the best two-way radio systems</p>
+							</li>
+							
+							<li>
+								<h4>Managed Services</h4>
+								<p>Monitoring and managing your mission-critical wireless networks </p>
+							</li>
+						</ul>
 				<a class="btn btn-default btn-xs" href="{{ URL::to('service-get-quote/Two_Way_Radio_Service_&_Repairs') }}" role="button">Contact Us</a></p>
             </div>
         </div>

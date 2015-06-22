@@ -1,10 +1,4 @@
-
-        
-
-    </div>
-    <!-- /.container -->
-    
-        <!-- Footer -->
+            <!-- Footer -->
     <div class="container-fluid">
         <footer>
             <div class="row">

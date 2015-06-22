@@ -8,12 +8,11 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
+        <div class="row breadcrumb-nav">
             <div class="col-lg-12">
-				<hr />
                 <ol class="breadcrumb">
                     <li><a href="{{ URL::to('home') }}">Home</a>
                     </li>
@@ -79,9 +78,7 @@
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
-
+   </div>
 @include('Pages.footer-snippet')
 
 </body>
