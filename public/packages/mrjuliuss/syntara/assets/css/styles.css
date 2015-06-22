@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../../../../../Assets/fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../../../../../Assets/fonts/PT Sans/PT Sans Caption.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PTSerif Caption';
+    src: url('../../../../../Assets/fonts/PT Sans/PTSerif-Caption.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../../../../../Assets/fonts/PT Sans/PT Sans Narrow.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow Bold';
+    src: url('../../../../../Assets/fonts/PT Sans/PT Sans Narrow Bold.ttf') format('truetype');
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    color: #6a6565;
+    background-image: url('../img/3px-tile.png');
+}
+
+.navbar.main-bar {
+    background-color: rgba(0, 0, 40, 0.95);
+    border-color: #080808;
+    background-image: url('../../../../../Assets/img/3px-tile.png');
+}
+
+/* forms */
+
+.form-control, .uneditable-input {
+    font-size: 16px;
+    border: 2px solid #ecf0f1;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border: 2px solid #2980BA;
+    box-shadow: none;
+    transition: ;
+}
+
+.form-control + i {
+    position: absolute;
+    right: 25px;
+    font-size: 22px;
+    color: #bdc3c7;
+}

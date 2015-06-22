@@ -14,11 +14,11 @@
 
     <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-            <li class=""><a href="{{ URL::route('indexDashboard') }}"><i class="glyphicon glyphicon-home"></i> <span>{{ trans('syntara::navigation.index') }}</span></a></li>
+            <li class=""><a href="{{ URL::route('indexDashboard') }}"><i class="fa fa-home"></i> <span>{{ trans('syntara::navigation.index') }}</span></a></li>
             @if (Sentry::check())
                 @if($currentUser->hasAccess(Config::get('syntara::permissions.listUsers')) || $currentUser->hasAccess(Config::get('syntara::permissions.listGroups')))
                 <li class="dropdown" >
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-user"></i> <span>{{ trans('syntara::navigation.users') }}</span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> <span>{{ trans('syntara::navigation.users') }}</span></a>
                     <ul class="dropdown-menu">
                         @if($currentUser->hasAccess(Config::get('syntara::permissions.listUsers')))
                         <li><a href="{{ URL::route('listUsers') }}">{{ trans('syntara::navigation.users') }}</a></li>
