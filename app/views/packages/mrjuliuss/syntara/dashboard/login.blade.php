@@ -8,16 +8,16 @@
             <form id="login-form" method="post" class="form-horizontal">
                 <div class="form-group account-username">
                     @if($loginAttribute === 'email')
-                    <input type="text" class="col-lg-12 form-control" placeholder="{{ trans('syntara::all.email') }}" name="email" id="email">
-                    <i class="fa fa-user"></i>
+                    <input type="text" class="col-lg-12 form-control login-field" placeholder="{{ trans('syntara::all.email') }}" name="email" id="email">
+                    <i class="fa fa-user input-icon"></i>
                     @elseif($loginAttribute === 'username')
-                    <input type="text" class="col-lg-12 form-control" placeholder="{{ trans('syntara::users.username') }}" name="username" id="username">
-                    <i class="fa fa-user"></i>
+                    <input type="text" class="col-lg-12 form-control login-field" placeholder="{{ trans('syntara::users.username') }}" name="username" id="username">
+                    <i class="fa fa-user input-icon"></i>
                     @endif
                 </div>
                 <div class="form-group account-username account-password">
-                   <input type="password" class="col-lg-12 form-control" placeholder="{{ trans('syntara::all.password') }}" name="pass" id="pass">
-                   <i class="fa fa-lock"></i>
+                   <input type="password" class="col-lg-12 form-control login-field" placeholder="{{ trans('syntara::all.password') }}" name="pass" id="pass">
+                   <i class="fa fa-lock input-icon"></i>
                 </div>
                 <div class="checkbox">
                     <label>

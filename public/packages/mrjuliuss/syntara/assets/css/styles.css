@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'PT Sans Bold';
+    src: url('../../../../../Assets/fonts/PT Sans/PT Sans Bold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'PTSerif Caption';
     src: url('../../../../../Assets/fonts/PT Sans/PTSerif-Caption.woff') format('woff');
 }
@@ -31,15 +36,34 @@ body {
     background-image: url('../img/3px-tile.png');
 }
 
+@media (min-width:768px){
+    
+}
+
 .navbar.main-bar {
     background-color: rgba(0, 0, 40, 0.95);
     border-color: #080808;
     background-image: url('../../../../../Assets/img/3px-tile.png');
 }
 
+/* label */
+
+.label-danger {
+    font-family: 'PT Sans Bold';
+    padding: 5px 10px;
+    background-color: #c0392b;
+    border-radius: 0;
+    width: 100%;
+}
+
 /* forms */
 
-.form-control, .uneditable-input {
+.form-group {
+    margin-bottom: 30px !important;
+}
+
+.form-control,
+.uneditable-input {
     font-size: 16px;
     border: 2px solid #ecf0f1;
     box-shadow: none;
@@ -48,12 +72,55 @@ body {
 .form-control:focus {
     border: 2px solid #2980BA;
     box-shadow: none;
-    transition: ;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.form-control + i {
+.login-field {
+    height: 42px;
+}
+
+.login .fa-user.input-icon,
+.login .fa-lock.input-icon {
+    padding: 0 !important;
     position: absolute;
-    right: 25px;
-    font-size: 22px;
+    z-index: 2;
+    top: 10px;
+    right: 28px;
     color: #bdc3c7;
+    font-size: 21px;
+}
+
+.login .fa-lock.input-icon {
+    top: 82px !important;
+    right: 29px !important;
+    font-size: 22px;
+}
+
+.login .login-field:focus + .input-icon {
+    color: #2980BA;
+}
+
+.btn-primary {
+    margin: 5px 0;
+    font-family: 'PT Sans Bold';
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 2px solid #2980b9;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:hover {
+    background-color: #3498db !important;
+    border-color: #3498db !important;
 }
