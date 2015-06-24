@@ -37,7 +37,10 @@ body {
 }
 
 @media (min-width:768px){
-    
+    .label-danger {
+        margin: 43px 0 !important;
+        left: 15px;
+    }
 }
 
 .navbar.main-bar {
@@ -49,17 +52,18 @@ body {
 /* label */
 
 .label-danger {
-    font-family: 'PT Sans Bold';
+    margin: 1px;
     padding: 5px 10px;
+    position: absolute;
+    font-family: 'PT Sans Bold';
     background-color: #c0392b;
     border-radius: 0;
-    width: 100%;
 }
 
 /* forms */
 
 .form-group {
-    margin-bottom: 30px !important;
+    margin-bottom: 25px !important;
 }
 
 .form-control,
@@ -79,12 +83,8 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.login-field {
-    height: 42px;
-}
-
-.login .fa-user.input-icon,
-.login .fa-lock.input-icon {
+.fa-user.input-icon,
+.fa-lock.input-icon {
     padding: 0 !important;
     position: absolute;
     z-index: 2;
@@ -94,15 +94,17 @@ body {
     font-size: 21px;
 }
 
-.login .fa-lock.input-icon {
-    top: 82px !important;
+.fa-lock.input-icon {
+    top: 77px !important;
     right: 29px !important;
     font-size: 22px;
 }
 
-.login .login-field:focus + .input-icon {
+.login-field:focus + .input-icon {
     color: #2980BA;
 }
+
+/* buttons */
 
 .btn-primary {
     margin: 5px 0;
@@ -121,6 +123,64 @@ body {
 
 .btn-primary:hover,
 .btn-primary:hover {
-    background-color: #3498db !important;
-    border-color: #3498db !important;
+    background-color: #3498db ;
+    border-color: #3498db;
+}
+
+/* login widgets */
+
+.login-field {
+    height: 42px;
+}
+
+.login-btn {
+    background-color: #fff ;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    background-color: #2c3e50;
+    border: 2px solid #2c3e50;
+    color: #fff;
+}
+
+.login .login-field:focus {
+    border: 2px solid #2c3e50;
+}
+
+.login .login-field:focus + .input-icon {
+    color: #2c3e50;
+}
+
+/* nav */
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #9d9d9d;
+        padding-left: 38px;
+        font-size: 14px;
+    }
+}
+
+.navbar-nav > li > a > i.fa {
+    padding-right: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    padding-left: 30px;
+    font-family: 'PT Sans Narrow Bold';
+    font-size: 16px;
+    color: #fff !important;
+    text-shadow: 0px 1px 0px #34495E;
+    text-transform: uppercase;
+}
+
+.main-bar .dropdown-menu {
+    background-color: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: rgba(8, 8, 8, 0.6);
 }

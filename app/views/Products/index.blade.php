@@ -11,9 +11,11 @@ if (Sentry::check())
 			<html>
 			<head>
 				<title>Products</title>
+        		<link href="{{ asset('Assets/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
 				<link rel="stylesheet" href="{{ asset('Assets/css/bootstrap.min.css') }}" />
 				<link rel="stylesheet" href="{{ asset('packages/mrjuliuss/syntara/assets/css/toggle-switch.css') }}" />
 				<link rel="stylesheet" href="{{ asset('packages/mrjuliuss/syntara/assets/css/base.css') }}" media="all" />
+				<link rel="stylesheet" href="{{ asset('packages/mrjuliuss/syntara/assets/css/styles.css') }}" media="all" />
 				<link rel="stylesheet" href="{{ asset('packages/mrjuliuss/syntara/assets/css/dashboard.css') }}" media="all" />
 				<link rel="shortcut icon" href="{{ asset('Assets/ico/favicon.ico') }}">
 			</head>
@@ -26,13 +28,13 @@ if (Sentry::check())
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 				</button>
-					<a class="navbar-brand" href="{{ URL::to('dashboard') }}"><i class="glyphicon glyphicon-home"></i> Dashboard</a>
+					<a class="navbar-brand" href="{{ URL::to('dashboard') }}"><i class="fa fa-tachometer"></i> Dashboard</a>
 				</div>
 				<div class="navbar-collapse collapse navbar-responsive-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ URL::to('Products') }}"><i class="glyphicon glyphicon-shopping-cart"></i> <span>Products</span></a></li>
+					<li><a href="{{ URL::to('Products') }}"><i class="fa fa-shopping-cart"></i> <span>Products</span></a></li>
 					<li class="dropdown" >
-								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="glyphicon glyphicon-plus"></i> <span>Create</span></a>
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-plus"></i> <span>Create</span></a>
 								<ul class="dropdown-menu">
 									<li><a href="{{ URL::to('Products/create') }}"><span>Product</span></a></li>
 									<li><a href="{{ URL::to('Products/createSCS') }}"><span>Supplier / Category / SubCategory</span></a></li>
@@ -43,7 +45,7 @@ if (Sentry::check())
 			</nav>
 
 			<div id="breadcrumb">
-			<a href="{{ URL::to('Products') }}"><i class="glyphicon glyphicon-picture"></i> <span>Products</span></a>
+			<a href="{{ URL::to('Products') }}"><i class="fa fa-picture"></i> <span>Products</span></a>
 			</div>
 
 			<div class="content">
@@ -261,7 +263,7 @@ if (Sentry::check())
 		}
     }
 	else {
-		header('Location: home');
+		header('Location: tachometer');
 		die();
 	}
 ?>
