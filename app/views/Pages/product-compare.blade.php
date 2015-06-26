@@ -59,7 +59,7 @@
 								<a class="pull-right" href="{{ URL::to('remove' . $row->rowid) }}"><i class="fa fa-times"></i></a>
 								{{ Form::open(array('url' => 'get_quantity' . $row->rowid)) }}
 								<span class="pull-left">Quantity: {{ Form::text('quantity', Input::old('quantity')?: $row->qty, array('width' => '100%')) }}</span>
-								{{ Form::submit('...') }}
+								{{ Form::submit('CHANGE') }}
 								{{ Form::close() }}
 							</th>
 							@endforeach
