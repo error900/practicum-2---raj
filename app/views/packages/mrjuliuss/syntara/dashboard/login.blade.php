@@ -24,7 +24,7 @@
                         <input type="checkbox" name="remember" id="remember" value="false">{{ trans('syntara::all.remember') }}
                     </label>
                 </div>
-                <button class="btn btn-block btn-large btn-primary login-btn" style="margin-top: 15px;">{{ trans('syntara::all.signin') }}</button>
+                <button class="btn btn-block btn-large btn-primary login-btn">{{ trans('syntara::all.signin') }}</button>
             </form>
         </div>
     </div>

@@ -16,7 +16,7 @@ class FeatureController extends BaseController
             array(
                 'title' => 'Dashboard',
                 'link' => 'dashboard',
-                'icon' => 'glyphicon-credit-card'
+                'icon' => 'fa fa-tachometer'
             ),
             /*array(
                 'title' => 'Current Page',

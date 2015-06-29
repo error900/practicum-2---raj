@@ -3,41 +3,51 @@
 @section('content')
 
 <script src="{{ asset('packages/mrjuliuss/syntara/assets/js/dashboard/user.js') }}"></script>
-<div class="container" id="main-container">
+<div class="container-fluid" id="main-container">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-xs-12 col-md-3 no-spacing">
             <section class="module">
                 <div class="module-head">
-                    <b>{{ $user->getId() }} - {{ $user->username }}</b>
+                    <b class="bold">{{ trans('syntara::users.information') }}</b>
+                </div>
+                <div class="module-body ajax-content">
+                    @include('syntara::user.user-informations')
+                </div>
+            </section>
+        </div>
+        <div class="col-xs-12 col-md-9 no-spacing">
+            <section class="module">
+                <div class="module-head">
+                    <b class="bold">ID &#35;: {{ $user->getId() }} - <span>{{ $user->username }}</span></b>
                 </div>
                 <div class="module-body">
                     <form class="form-horizontal" id="edit-user-form" method="PUT">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                             <div class="form-group">
-                                <label class="control-label">{{ trans('syntara::users.username') }}</label>
-                                <input class="col-lg-12 form-control" type="text" id="username" name="username" value="{{ $user->username}}">
+                                <!-- <label class="control-label">{{ trans('syntara::users.username') }}</label> -->
+                                <input class="form-control" type="text" id="username" name="username" value="{{ $user->username}}">
                             </div>
                             <div class="form-group">
-                                <label class="control-label">{{ trans('syntara::all.email') }}</label>
-                                <input class="col-lg-12 form-control" type="text" id="email" name="email" value="{{ $user->email }}">
+                                <!-- <label class="control-label">{{ trans('syntara::all.email') }}</label> -->
+                                <input class="form-control" type="text" id="email" name="email" value="{{ $user->email }}">
                             </div>
                             <div class="form-group">
-                                <label class="control-label">{{ trans('syntara::all.password') }}</label>
-                                <input class="col-lg-12 form-control" type="password" placeholder="{{ trans('syntara::all.password') }}" id="pass" name="pass" >
+                                <!-- <label class="control-label">{{ trans('syntara::all.password') }}</label> -->
+                                <input class="form-control" type="password" placeholder="{{ trans('syntara::all.password') }}" id="pass" name="pass" >
                             </div>
                             <div class="form-group">
-                                <label class="control-label">{{ trans('syntara::users.last-name') }}</label>
-                                <input class="col-lg-12 form-control" type="text" id="last_name" name="last_name" value="{{ $user->last_name  }}">
+                                <!-- <label class="control-label">{{ trans('syntara::users.last-name') }}</label> -->
+                                <input class="form-control" type="text" id="last_name" name="last_name" value="{{ $user->last_name  }}">
                             </div>
                             <div class="form-group">
-                                <label class="control-label">{{ trans('syntara::users.first-name') }}</label>
-                                <input class="col-lg-12 form-control" type="text" id="first_name" name="first_name" value="{{ $user->first_name }}">
+                                <!-- <label class="control-label">{{ trans('syntara::users.first-name') }}</label> -->
+                                <input class="form-control" type="text" id="first_name" name="first_name" value="{{ $user->first_name }}">
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-xs-12 col-md-6">
                             <div class="form-group">
-                                <label class="control-label">{{ trans('syntara::users.groups') }}</label>
+                                <!-- <label class="control-label">{{ trans('syntara::users.groups') }}</label> -->
                             </div>
                             <div class="form-group">
 
@@ -51,13 +61,13 @@
                             @endforeach
                             </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-xs-12 col-md-5">
                             @if($currentUser->hasAccess(Config::get('syntara::permissions.addUserPermission')))
                                 @include(Config::get('syntara::views.permissions-select'), array('permissions'=> $permissions))
                             @endif
                         </div>
                         @if($user->getId() !== $currentUser->getId())
-                        <div class="col-lg-2">
+                        <div class="col-xs-12 col-md-2">
                             <label>{{ trans('syntara::users.banned') }}</label>
                             <div class="switch-toggle well">
                                 <input id="no" name="banned" type="radio" value="no" {{ ($throttle->isBanned() === false) ? 'checked' : '' }}>
@@ -72,7 +82,7 @@
                         @endif
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-xs-12 col-md-12">
                             <br>
                             <div class="form-group">
                                 <button id="update-user" class="btn btn-primary">{{ trans('syntara::all.update') }}</button>
@@ -82,15 +92,6 @@
                     </form>
                 </div>
             </section>
-        </div>
-        <div class="col-lg-4">
-            <section class="module">
-            <div class="module-head">
-                <b>{{ trans('syntara::users.information') }}</b>
-            </div>
-            <div class="module-body ajax-content">
-                @include('syntara::user.user-informations')
-            </div>
         </div>
     </div>
 </div>
