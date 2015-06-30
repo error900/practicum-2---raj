@@ -51,15 +51,20 @@ a {
 }
 
 .bold {
-    font-family: 'PT Sans Bold';
+    font-family: 'PTSerif Caption';
     font-size: 13px;
-    font-weight: 600 !important;
+}
+
+.hr-line {
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(236, 240, 241, 0.5);
 }
 
 /* breadcrumb */
 
 #breadcrumb {
     background-color: #95a5a6 !important;
+    border: 0;
 }
 
 #breadcrumb a {
@@ -90,6 +95,18 @@ a {
     background-color: rgba(0, 0, 40, 0.95);
     border-color: #080808;
     background-image: url('../../../../../Assets/img/3px-tile.png');
+}
+
+.navbar-brand {
+    font-family: 'Open Sans Semibold';
+    font-size: 14px !important;
+}
+
+/* alert */
+
+.status-message {
+    margin-bottom: 0;
+    border: 0;
 }
 
 /* label */
@@ -241,7 +258,15 @@ label {
     }
 
     #main-container {
-        padding: 20px 20px 0 20px !important;
+        
+    }
+
+    .left-container {
+        padding-right: 0;
+    }
+
+    .center-container {
+        padding-left: 0;
     }
 }
 
@@ -272,10 +297,58 @@ label {
 
 /* checkbox & radio button */
 
+/* user profile photo */
+
+.user-avatar {
+    padding: 30px 20px 20px 20px;
+    background-color: #264348;
+}
+
+.user-photo {
+    margin: auto;
+    height: 128px;
+    width: 128px;
+    border: 2px solid transparent;
+}
+
+.user-photo img {
+    border: 8px solid #16A085;
+    border-radius: 50%;
+}
+
+.user-basic-info {
+    color: #fff;
+    padding: 25px 0 10px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.user-name {
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+}
+
+.user-name span {
+    text-transform: uppercase;
+}
+
+.user-group {
+
+}
+
+.user-email {
+    color: #48929B;
+}
+
 /* container */
 
+.left-container .module,
+.center-container .module {
+    border: 0;
+}
+
 #main-container {
-    padding: 5px 5px 0 5px;
+    padding: 0;
 }
 
 .module {
@@ -286,4 +359,38 @@ label {
 .module .module-head {
     background-color: #fff;
     border-bottom: 0;
+}
+
+.left-container > .module > .module-head,
+.left-container > .module > .module-head > .bold,
+.left-container > .module > .module-body {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0;
+}
+
+.left-container > .module > .module-head {
+    padding-top: 30px;
+    height: 80px;
+}
+
+.left-container > .module > .module-head > .bold {
+    padding: 0;
+}
+
+
+.center-container > .module > .module-head {
+    height: 90px;
+}
+
+.center-container > .module > .module-head > .bold {
+    padding: 15px 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.center-container > .module > .module-body {
+    padding-right: 25px;
+    padding-left: 25px;
 }

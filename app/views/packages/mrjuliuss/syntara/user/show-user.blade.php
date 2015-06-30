@@ -5,20 +5,22 @@
 <script src="{{ asset('packages/mrjuliuss/syntara/assets/js/dashboard/user.js') }}"></script>
 <div class="container-fluid" id="main-container">
     <div class="row">
-        <div class="col-xs-12 col-md-3 no-spacing">
+        <div class="col-xs-12 col-md-3 left-container">
             <section class="module">
+                @include('syntara::user.user-avatar')
                 <div class="module-head">
                     <b class="bold">{{ trans('syntara::users.information') }}</b>
+                    <div class="hr-line"></div>
                 </div>
                 <div class="module-body ajax-content">
                     @include('syntara::user.user-informations')
                 </div>
             </section>
         </div>
-        <div class="col-xs-12 col-md-9 no-spacing">
+        <div class="col-xs-12 col-md-9 center-container">
             <section class="module">
                 <div class="module-head">
-                    <b class="bold">ID &#35;: {{ $user->getId() }} - <span>{{ $user->username }}</span></b>
+                    <b class="bold">ID&#35;: {{ $user->getId() }} - <span>{{ $user->username }}</span></b>
                 </div>
                 <div class="module-body">
                     <form class="form-horizontal" id="edit-user-form" method="PUT">
