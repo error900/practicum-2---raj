@@ -51,8 +51,9 @@ a {
 }
 
 .bold {
-    font-family: 'PTSerif Caption';
+    font-family: 'Open Sans Semibold';
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 .hr-line {
@@ -177,6 +178,7 @@ label {
 
 .btn-primary {
     margin: 5px 0;
+    width: 100%;
     font-family: 'PT Sans Bold';
     background-color: #2980b9;
     color: #fff;
@@ -268,6 +270,20 @@ label {
     .center-container {
         padding-left: 0;
     }
+
+    .center-container > .module > .module-head > .bold {
+        padding: 15px 30px !important;
+        font-size: 40px !important;
+    }
+
+    .center-container > .module > .module-head {
+        height: 90px !important;
+    }
+
+    .center-container > .module > .module-body {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
 }
 
 .navbar-nav > li > a > i.fa {
@@ -296,6 +312,55 @@ label {
 }
 
 /* checkbox & radio button */
+
+.checkbox-default {
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox-default input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+}
+
+.checkbox-default label {
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.well {
+    margin-top: 10px;
+    background-color: #95a5a6;
+    border-radius: 0;
+    height: 34px;
+}
+
+.well input[type=radio] + label {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 2.5;
+    font-weight: 600 !important;
+}
+
+.well input[type=radio] + label:hover {
+    cursor: pointer;
+}
+
+.well > a {
+    background-color: #16a085;
+    margin: 0;
+    border-color: #108A72 !important;
+}
+
+.well > a:focus {
+    outline: 0 !important;
+}
+
 
 /* user profile photo */
 
@@ -381,16 +446,13 @@ label {
 
 
 .center-container > .module > .module-head {
-    height: 90px;
+    height: inherit;
 }
 
 .center-container > .module > .module-head > .bold {
-    padding: 15px 30px;
-    font-size: 40px;
+    font-family: 'PTSerif Caption';
+    padding: 15px 15px 0 15px;
+    width: 100%;
+    font-size: 14px;
     font-weight: 600;
-}
-
-.center-container > .module > .module-body {
-    padding-right: 25px;
-    padding-left: 25px;
 }

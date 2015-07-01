@@ -8,12 +8,11 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
+        <div class="row breadcrumb-nav">
             <div class="col-lg-12">
-				<hr />
                 <ol class="breadcrumb">
                     <li><a href="{{ URL::to('home') }}">Home</a>
                     </li>
@@ -28,7 +27,7 @@
 			@foreach ($Product as $list)
             <div class="col-md-4 img-portfolio">
                 <a href="{{ URL::to('product-item-' . $list->id) }}">
-                    <img class="product-image img-responsive img-hover" src="{{ asset('Uploads/' . $list->image_1) }}" alt="{{ $list->brand }} - {{ $list->model }}">
+                    <img class="product-image2 img-responsive img-hover" src="{{ asset('Uploads/' . $list->image_1) }}" alt="{{ $list->brand }} - {{ $list->model }}">
                 </a>
                 <h3>
                     <a href="{{ URL::to('product-item-' . $list->id) }}">{{ $list->brand }}</a>
@@ -42,8 +41,6 @@
 		@endif
         <!-- /.row -->
 
-        <hr>
-
         <!-- Pagination -->
         <div class="row text-center">
             <div class="col-lg-12">
@@ -51,8 +48,7 @@
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
+    </div>
 
 @include('Pages.footer-snippet')
 
