@@ -15,6 +15,7 @@ return array(
 	|
 	*/
 
+	/*'driver' => 'smtp'*/
 	'driver' => 'smtp',
 
 	/*
@@ -54,7 +55,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'krag_karl@yahoo.com', 'name' => 'Please Work'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +81,8 @@ return array(
 	|
 	*/
 
-	'username' => 'rajcombaguio@gmail.com',
+	//'username' => 'rajcombaguio@gmail.com'
+	'username' => 'karllester.napadao@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +95,8 @@ return array(
 	|
 	*/
 
-	'password' => 'rajcomb@guI0',
+	//'password' => 'rajcomb@guI0',\
+	'password' => '09282215660',
 
 	/*
 	|--------------------------------------------------------------------------

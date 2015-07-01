@@ -63,10 +63,10 @@
 					<div class="alert alert-success">{{ Session::get('message-contact') }}</div>
 					@endif
 					
-					{{ Form::open(array('route' => 'contact_inquire')) }}
+					{{ Form::open(array('action' => 'ContactController@contact_inquire')) }}
 					
 					<div class="form-group">
-						{{ Form::label('name', 'Name :') }}@if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	<br />
+						{{ Form::label('name', 'Name :') }} @if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	<br />
 						{{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'placeholder' => 'your name . . .')) }}
 					</div>
 					

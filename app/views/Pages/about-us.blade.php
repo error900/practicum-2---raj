@@ -37,6 +37,7 @@
         </div>
         <div class="row about">
             <div class="col-xs-12 col-md-12 mission">
+                
                 <h4>Our Mission</h4>
                 <p>To constantly strive to meet or surpass our customers' needs and expectations of services and to stay ahead of the competition by earning our customers' confidence and enthusiasm through continuous improvement driven by the integrity, teamwork, innovation and passion for excellence.</p>
             </div>
