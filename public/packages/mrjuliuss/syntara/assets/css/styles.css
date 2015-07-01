@@ -456,3 +456,14 @@ label {
     font-size: 14px;
     font-weight: 600;
 }
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+    .login-field {
+        height: 50px;
+    }
+
+}

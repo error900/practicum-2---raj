@@ -8,12 +8,11 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
+        <div class="row breacrum-nav">
             <div class="col-lg-12">
-				<hr />
                 <ol class="breadcrumb">
                     <li><a href="{{ URL::to('home') }}">Home</a>
                     </li>
@@ -121,12 +120,11 @@
         <!-- /.row -->
 
 		<div class="row request-quote-top-buffer">
-		<div class="col-md-12">
-		<center><a class="btn btn-info btn-lg" href="{{ URL::to('product-get-quote') }}" role="button">Request a Quote</a></center>
+			<div class="col-md-12">
+			<center><a class="btn btn-info btn-lg" href="{{ URL::to('product-get-quote') }}" role="button">Request a Quote</a></center>
+			</div>
 		</div>
-		</div>
-		
-        <hr>
+	</div>
 
 @include('Pages.footer-snippet')
 

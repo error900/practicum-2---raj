@@ -23,7 +23,7 @@
         <!-- /.row -->
 
         <!-- Content Row -->
-        <div class="row">
+        <div class="row" style="position: relative;">
             <!-- Map Column -->
             <div class="col-md-12">
                 <h3 class="text-center header1">Contact Details</h3>

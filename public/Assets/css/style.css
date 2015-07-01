@@ -70,7 +70,7 @@ header {
 }
 
 .panel, .services-banner, .product-image {
-box-shadow: 0px 5px 5px #bdc3c7;
+	box-shadow: 0px 5px 5px #bdc3c7;
 }
 
 .scroll-top-wrapper {
@@ -137,6 +137,14 @@ box-shadow: 0px 5px 5px #bdc3c7;
 	min-height: 30px;
 }
 
+.contact-details > p > i {
+	margin-right: 10px !important;
+	margin-bottom: 10px !important;
+	padding-right: 15px;
+	width: 10px;
+	font-size: 15px;
+}
+
 .contact-form {
 	margin-bottom: 20px;
 }
@@ -184,7 +192,8 @@ box-shadow: 0px 5px 5px #bdc3c7;
 	font-size: 14px;
 }
 
-.product-image {
+.product-image,
+.product-image2 {
 	box-shadow: 0px 5px 5px rgba(189, 195, 199, 0.5);
 }
 
@@ -912,7 +921,30 @@ i.fa.fa-home {
 	}
 
 	.product-image2 {
-		
+		height: 280px;
+		margin: auto;
+	}
+
+	.contact-details {
+		padding: 15px;
+		background-color: #333;
+		position: absolute;
+		min-height: 140px;
+		width: 500px;
+		color: #89C4F4;
+		bottom: 20px;
+		left: 35px;
+	}
+
+	.contact-details > p {
+		margin: 0 10px !important;
+	}
+
+	.contact-details > p > i {
+		font-size: 16px;
+		margin: 0 !important;
+		margin-bottom: 7px !important;
+		padding-right: 23px;
 	}
 
 	/* footer */
