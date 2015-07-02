@@ -119,15 +119,19 @@
     <div class="container-fluid bg-plain">
         <div class="row">
             <div class="hr-row-line"></div>
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <h2 class="text-center header1">Products</h2>
             </div>
-            <hr />
             @foreach ($Product as $list)
-            <div class="col-md-4 col-sm-6">
-                <center><span>{{ $list->brand }} - {{ $list->model }}</span></center>
+            <div class="col-md-4 col-sm-6 product-name text-center">
+                <div class="product-badge">
+                    <span>
+                        <p>{{ $list->brand }}</p>
+                        <p>{{ $list->model }}</p>
+                    </span>
+                </div>
                 <a href="{{ URL::to('product-item-' . $list->id) }}">
-                    <img class="panel img-responsive img-portfolio img-hover" src="{{ asset('Uploads/' . $list->image_1) }}" alt="{{ $list->brand }} - {{ $list->model }}">
+                    <img class="panel img-responsive img-portfolio img-hover product-image3" src="{{ asset('Uploads/' . $list->image_1) }}" alt="{{ $list->brand }} - {{ $list->model }}">
                 </a>
             </div>
             @endforeach
@@ -141,26 +145,6 @@
 @include('Pages.footer-snippet')
 		
 	<script src="{{ asset('Assets/js/services-icons.js') }}"></script>
-    <script>
-    //     $('.panel-default')
-    //         .on('mouseenter', function(){
-    //             var defaultpanel = $(this);
-    //             defaultpanel.stop(true, true).animate({ 
-    //                 margin: -10,
-    //                 width: "+=20",
-    //                 height: "+=20"
-    //             }, 'fast');
-    //         })
-    //         .on('mouseleave', function(){
-    //             var defaultpanel = $(this);
-    //             defaultpanel.stop(true, true).animate({ 
-    //                 margin: 0,
-    //                 width: "-=20",
-    //                 height: "-=20"
-    //             }, 'fast');
-    //         })
-    // </script>
-
 </body>
 
 </html>

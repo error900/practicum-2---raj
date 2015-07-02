@@ -193,8 +193,39 @@ header {
 }
 
 .product-image,
-.product-image2 {
+.product-image2,
+.product-image3 {
+	margin: auto;
 	box-shadow: 0px 5px 5px rgba(189, 195, 199, 0.5);
+	height: 220px;
+}
+
+.product-badge {
+	position: absolute;
+	background-image: url('../img/product-badge.png');
+	background-repeat: no-repeat;
+	height: 85px;
+	width: 150px;
+	top: 20px;
+	right: 15px;
+	background-size: contain;
+	z-index: 2;
+}
+
+.product-name span {
+	font-family: 'PT Sans Bold';
+	position: absolute;
+	bottom: 79px;
+	line-height: 8px;
+	top: 9px;
+	right: 40px;
+	font-size: 16px;
+	text-align: left;
+	width: 100px;
+}
+
+.product-badge span p:last-child {
+	font-size: 13px;
 }
 
 .product-info p {
@@ -947,11 +978,19 @@ i.fa.fa-home {
 		padding-right: 23px;
 	}
 
+	.product-badge {
+		right: 96px !important;
+	}
+
+	footer {
+		margin: 45px 30px 10px 90px !important;
+	}
+
 	/* footer */
 
 	.nav-footer li a {
 		padding: 5px 10px !important;
-		font-size: 16px !important;
+		font-size: 17px !important;
 	}
 }
 
@@ -1109,7 +1148,7 @@ i.fa.fa-home {
 }
 
 .panel-default>.panel-heading {
-	padding: 5px 10px 0 10px;
+	padding: 15px 10px 0 10px;
 	background-color: transparent;
 	border-bottom: 0;
 }
@@ -1186,6 +1225,7 @@ i.fa.fa-home {
 	color: #2980b9;
 	font-size: 12px;
 	text-transform: lowercase;
+	border: 1px solid !important;
 }
 
 .btn.btn-default.learnmore-btn:hover {
@@ -1195,14 +1235,14 @@ i.fa.fa-home {
 
 
 .btn.btn-default.login-btn {
-	font-family: 'PT Sans';
+	font-family: 'PT Sans Bold';
 	margin: 15px auto;
 	width: 55%;
 	font-size: 15px;
 	font-weight: 600;
 	background-color: transparent;
 	color: #fff;
-	border: 1px solid #fff;
+	border: 1px solid #fff !important;
 	border-radius: 2px;
 }
 
@@ -1253,7 +1293,7 @@ i.fa.fa-home {
 /* Footer Styles */
 
 footer {
-    margin: 15px 0;
+	margin: 45px 10px 10px 10px;
 }
 
 footer a,
