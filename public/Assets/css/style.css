@@ -310,45 +310,7 @@ p.services-definition {
 	content: ' - ';
 }
 
-h1.page-header, h2.page-header, h3.page-header, h3.custom-header, h4.custom-header {
-	color: #6a6565;
-}
-
-/*=============================FLOATING ICONS & TEXTS============================*/
-.icon1, .icon2, .icon3, .icon4, .icon5, .text-caption {
-	position: absolute;
-}
-
-.icon1 {
-	left: -5%;
-	top: -220%;
-}
-
-.icon2 {
-	left: 10%;
-	top: -510%;
-}
-
-.icon3 {
-	left: 41%;
-	top: -680%;
-}
-
-.icon4 {
-	left: 73%;
-	top: -510%;
-}
-
-.icon5 {
-	left: 87%;
-	top: -180%;
-}
-
-.text-caption {
-	text-align: center;
-	width: 100%;
-	font-size: 30px;
-}
+/* service icons */
 
 @media(max-width:1024px) {
 	

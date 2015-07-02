@@ -16,19 +16,19 @@
 				
                 <div class="carousel-caption">
     				<a href="{{ URL::to('two-way-radio-communication') }}">
-    				<div class="icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"><!-- <img id="image-icon1" src="{{ asset('Assets/img/slider/') }}" width="160px" height="160px" /> --></div>
+    				<div class="icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"><img id="image-icon1" src="{{ asset('Assets/img/slider/icon1.png') }}" width="160px" height="160px" /></div>
     				</a>
     				<a href="{{ URL::to('imaging-solutions') }}">
-    				<div class="icon2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"><!-- <img id="image-icon2" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				<div class="icon2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"><img id="image-icon2" src="{{ asset('Assets/img/slider/icon2.png') }}" width="130px" height="130px" /></div>
     				</a>
     				<a href="{{ URL::to('information-technology') }}">
-    				<div class="icon3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"><!-- <img id="image-icon3" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				<div class="icon3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"><img id="image-icon3" src="{{ asset('Assets/img/slider/icon3.png') }}" width="130px" height="130px" /></div>
     				</a>
     				<a href="{{ URL::to('security-and-surveillance') }}">
-    				<div class="icon4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"><!-- <img id="image-icon4" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				<div class="icon4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"><img id="image-icon4" src="{{ asset('Assets/img/slider/icon4.png') }}" width="130px" height="130px" /></div>
     				</a>
     				<a href="{{ URL::to('renewable-energy') }}">
-    				<div class="icon5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"><!-- <img id="image-icon5" src="{{ asset('Assets/img/slider/') }}" width="130px" height="130px" /> --></div>
+    				<div class="icon5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"><img id="image-icon5" src="{{ asset('Assets/img/slider/icon5.png') }}" width="130px" height="130px" /></div>
     				</a>
     				<p style="color: #0066ff;" class="text-caption" id="text-caption"></p>
                 </div>
@@ -144,7 +144,6 @@
 
 @include('Pages.footer-snippet')
 		
-	<script src="{{ asset('Assets/js/services-icons.js') }}"></script>
 </body>
 
 </html>
