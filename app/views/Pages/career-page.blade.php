@@ -56,7 +56,7 @@
 					<div class="alert alert-success">{{ Session::get('message-career') }}</div>
 					@endif
 					
-					{{ Form::open(array('route' => 'career_inquire', 'files' => true)) }}
+					{{ Form::open(array('action' => 'ContactController@career_inquire', 'files' => true)) }}
 					
 					<div class="form-group">
 						{{ Form::label('name', 'Name :') }}@if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	<br />

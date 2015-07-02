@@ -55,7 +55,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'krag_karl@yahoo.com', 'name' => 'Please Work'),
+	'from' => array('address' => null, 'name' => null),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return array(
 	*/
 
 	//'password' => 'rajcomb@guI0',\
-	'password' => '09282215660',
+	'password' => 'aavixmccbhkwgdvc',
 
 	/*
 	|--------------------------------------------------------------------------
