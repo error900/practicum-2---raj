@@ -73,7 +73,7 @@ class ContactController extends BaseController {
                     {
                         $message->from($data['email'], $data['name']);
     					$message->subject($data['subject']);
-    					$message->cc('inquiry@rajtechinc.com');
+    					$message->cc('karllester.napadao@gmail.com');
     					$message->ReplyTo($data['email']);
     					$message->to('karllester.napadao@gmail.com', 'RAJ Technologies Inc.');
                     });
