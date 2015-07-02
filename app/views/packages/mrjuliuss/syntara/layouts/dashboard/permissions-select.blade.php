@@ -1,4 +1,4 @@
-<b class="bold">{{ trans('syntara::permissions.permissions')}}</b>
+<label class="control-label">{{ trans('syntara::permissions.permissions')}}</label>
 <div class="input-group">
     <span class="input-group-addon"><span class="fa fa-plus add-input"></span></span>
     <select class="form-control permissions-select">
@@ -20,3 +20,4 @@
     @endforeach
 @endif
 </div>
+<br>

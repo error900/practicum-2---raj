@@ -2,7 +2,7 @@
 
 @section('content')
 <script type="text/javascript" src="{{ asset('packages/mrjuliuss/syntara/assets/js/dashboard/login.js') }}"></script>
-<div class="container">
+<div class="container" id="main-container">
     <div class="row" style="margin-top: 20px;">
         <div class="login col-lg-4 col-lg-offset-4">
             <form id="login-form" method="post" class="form-horizontal">

@@ -1,6 +1,6 @@
 <?php
 
-class ProductController extends \BaseController {
+class ProductController extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
