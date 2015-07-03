@@ -8,35 +8,45 @@
 @include('Pages.header-nav-snippet')
 
     <div class="rajtech-bg-image">
-        <div class="row"></div>
-    </div>
-    <header id="myCarousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="item active">
-				
-                <div class="carousel-caption">
-    				<a href="{{ URL::to('two-way-radio-communication') }}">
-    				<div class="icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"><img id="image-icon1" src="{{ asset('Assets/img/slider/icon1.png') }}" width="160px" height="160px" /></div>
-    				</a>
-    				<a href="{{ URL::to('imaging-solutions') }}">
-    				<div class="icon2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"><img id="image-icon2" src="{{ asset('Assets/img/slider/icon2.png') }}" width="130px" height="130px" /></div>
-    				</a>
-    				<a href="{{ URL::to('information-technology') }}">
-    				<div class="icon3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"><img id="image-icon3" src="{{ asset('Assets/img/slider/icon3.png') }}" width="130px" height="130px" /></div>
-    				</a>
-    				<a href="{{ URL::to('security-and-surveillance') }}">
-    				<div class="icon4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"><img id="image-icon4" src="{{ asset('Assets/img/slider/icon4.png') }}" width="130px" height="130px" /></div>
-    				</a>
-    				<a href="{{ URL::to('renewable-energy') }}">
-    				<div class="icon5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"><img id="image-icon5" src="{{ asset('Assets/img/slider/icon5.png') }}" width="130px" height="130px" /></div>
-    				</a>
-    				<p style="color: #0066ff;" class="text-caption" id="text-caption"></p>
-                </div>
-				
-            </div>
-        </div>
-    </header>
+        <div class="services-offered">
+    		<a href="{{ URL::to('two-way-radio-communication') }}">
+                <img id="image-icon1" src="{{ asset('Assets/img/slider/icon1.png') }}" width="160px" height="160px"/>
+                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
+                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.
+                </p>
 
+    		</a>
+    		<a href="{{ URL::to('imaging-solutions') }}">
+                <img id="image-icon2" src="{{ asset('Assets/img/slider/icon2.png') }}" width="130px" height="130px"/>
+                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
+                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+
+    		</a>
+    		<a href="{{ URL::to('information-technology') }}">
+                <img id="image-icon3" src="{{ asset('Assets/img/slider/icon3.png') }}" width="130px" height="130px"/>
+                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
+                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+
+    		</a>
+    		<a href="{{ URL::to('security-and-surveillance') }}">
+                <img id="image-icon4" src="{{ asset('Assets/img/slider/icon4.png') }}" width="130px" height="130px"/>
+                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
+                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+
+    		</a>
+    		<a href="{{ URL::to('renewable-energy') }}">
+                <img id="image-icon5" src="{{ asset('Assets/img/slider/icon5.png') }}" width="130px" height="130px"/>
+                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
+                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+
+    		</a>
+        </div>
+    </div>
     <!-- Page Content -->
     <div class="container-fluid bg-plain">
         <!-- Marketing Icons Section -->

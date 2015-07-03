@@ -312,13 +312,112 @@ p.services-definition {
 
 /* service icons */
 
+@media (min-width:768px) {
+	.services-offered {
+
+	}
+
+	#image-icon1,
+	#image-icon2,
+	#image-icon3,
+	#image-icon4,
+	#image-icon5 {
+		position: absolute;
+	}
+
+	#image-icon1 {
+		top: 195px;
+		right: 272px;
+		height: 75px;
+		width: 75px;
+	}
+
+	#image-icon2 {
+	}
+
+	#image-icon3 {
+		bottom: 80px;
+		right: 211px;
+		height: 82px;
+		width: 82px;
+	}
+
+	#image-icon4 {
+	}
+
+	#image-icon5 {
+		bottom: 43px;
+		right: 512px;
+		height: 68px;
+		width: 68px;
+	}
+
+	#image-icon3 + .icon-arrow {
+		height: 100px;
+		width: 100px;
+		right: 197px;
+		bottom: 73px;
+		position: absolute;
+	}
+
+	/*img {
+		border-radius: 50%;
+		-webkit-transition: -webkit-transform .8s ease-in-out;
+		transition: transform .8s ease-in-out;
+	}
+	img:hover {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+
+	img:hover
+		{
+		    cursor: default;
+		    transform: rotate(360deg);
+		    transition: all 0.3s ease-in-out 0s;
+		}
+*/
+
+	.service-title,
+	.service-description {
+		position: absolute;
+		width: 550px;
+		text-shadow: 0px 1px 0px #34495E;
+	}
+
+	.service-title:hover,
+	.service-description:hover,
+	.service-title:focus,
+	.service-description:focus {
+		text-decoration: none;
+	}
+
+	.service-title {
+		padding: 20px 20px 5px 60px;
+		font-family: 'Open Sans Semibold';
+		top: 100px;
+		color: #f39c12;
+		font-size: 25px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		word-wrap: break-word;
+		line-height: 1;
+	}
+
+	.service-description {
+		top: 185px;
+		padding: 0 20px 20px 60px;
+		color: #fff;
+		font-size: 13px;
+	}
+}
+
 @media(max-width:1024px) {
 	
 	#image-icon1 {
 		width: 120px;
 		height: 120px;
 	}
-	
 	
 	#image-icon2 {
 		width: 90px;
@@ -747,11 +846,9 @@ i.fa.fa-home {
 	}
 
 	.rajtech-bg-image {
-		background-image: url('../img/slider/bg-rajtech-services1.png');
 		background-position-y: 80px !important;
-		width: 100%;
-		height: 435px !important;
-		position: relative;
+		width: 100% !important;
+		height: 460px !important;
 	}
 
 	.nav-position-abs {
@@ -957,13 +1054,13 @@ i.fa.fa-home {
 }
 
 .rajtech-bg-image {
-	background-image: url('../img/slider/bg-rajtech-services1.png');
+	background-image: url('../img/slider/raj.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: contain;
 	background-position-y: 50px;
 	width: 100%;
-	height: 126px;
+	height: 150px;
 	background-color: #000028;
 	position: relative;
 }
