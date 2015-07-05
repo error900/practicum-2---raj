@@ -10,39 +10,39 @@
     <div class="rajtech-bg-image">
         <div class="services-offered">
     		<a href="{{ URL::to('two-way-radio-communication') }}">
-                <img id="image-icon1" src="{{ asset('Assets/img/slider/icon1.png') }}" width="160px" height="160px"/>
-                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
-                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img id="image-icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()" src="{{ asset('Assets/img/slider/icon1.png') }}" width="160px" height="160px"/>
+                <img class="gear" src="{{ asset('Assets/img/slider/gear1.png') }}">
+                <p class="service-title">Information Technology (IT) Services</p>
                 <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.
                 </p>
 
     		</a>
     		<a href="{{ URL::to('imaging-solutions') }}">
                 <img id="image-icon2" src="{{ asset('Assets/img/slider/icon2.png') }}" width="130px" height="130px"/>
-                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
-                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+                <img class="gear" src="{{ asset('Assets/img/slider/gear2.png') }}">
+                <p class="service-title">Imaging Solution Services</p>
+                <p class="service-description">Imaging Solutions mean custom office equipment packages to address your specific wants and needs. By combining quality digital printer, copier, scanner and fax hardware, with our excellent customer support.</p>
 
     		</a>
     		<a href="{{ URL::to('information-technology') }}">
                 <img id="image-icon3" src="{{ asset('Assets/img/slider/icon3.png') }}" width="130px" height="130px"/>
-                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
-                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+                <img class="gear" src="{{ asset('Assets/img/slider/gear3.png') }}">
+                <p class="service-title">2-Way Radio Communication Services</p>
+                <p class="service-description">Our diverse array of portable and mobile two-way radios better enable you to efficiently coordinate and communicate with your on-the-go workforce, regardless of whether you have a small shop or a large nationwide business.</p>
 
     		</a>
     		<a href="{{ URL::to('security-and-surveillance') }}">
                 <img id="image-icon4" src="{{ asset('Assets/img/slider/icon4.png') }}" width="130px" height="130px"/>
-                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
-                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+                <img class="gear" src="{{ asset('Assets/img/slider/gear4.png') }}">
+                <p class="service-title">Security &amp; Surveillance Services</p>
+                <p class="service-description">Our expertise includes access control, video surveillance, integrated physical/logical security and intrusion alarms. Our strong experience with 100 percent IP-based systems that lower cost and improve network flexibility and scalability.</p>
 
     		</a>
     		<a href="{{ URL::to('renewable-energy') }}">
                 <img id="image-icon5" src="{{ asset('Assets/img/slider/icon5.png') }}" width="130px" height="130px"/>
-                <img class="icon-arrow" src="{{ asset('Assets/img/slider/arrow-spin.png') }}">
-                <p class="service-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="service-description">We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
+                <img class="gear" src="{{ asset('Assets/img/slider/gear5.png') }}">
+                <p class="service-title">Renewable Energy Services</p>
+                <p class="service-description">Solar technologies are an effective and increasingly economic choice as conventional energy prices rise. We have the capabilities to develop, construct, operate and optimise the operation of solar powered facilities.</p>
 
     		</a>
         </div>
@@ -57,7 +57,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span>Information Technology(IT) Services</h4>
+                        <h4><span class="service-panel-icon"><img src="{{ asset('Assets/img/check-o.png') }}"></span>Information Technology (IT) Services</h4>
                     </div>
                     <div class="panel-body">
                         <p>We are a global leader in delivering IT Outsourcing Services in the industry. Our transformation and innovation capabilities help IT functions to become a key business enabler and harnessing the latest technology for delivering excellent services.</p>
@@ -153,6 +153,24 @@
     <!-- /.container -->
 
 @include('Pages.footer-snippet')
+
+    <script>
+        function mouseOver1() {
+            $("#image-icon2 + .gear").addClass("spinc");
+            $("#image-icon3 + .gear").addClass("spincc");
+            $("#image-icon4 + .gear").addClass("spinc");
+            $("#image-icon5 + .gear").addClass("spincc");
+        }
+
+        function mouseOut1() {
+            $("#image-icon2 + .gear").removeClass("spinc");
+            $("#image-icon3 + .gear").removeClass("spincc");
+            $("#image-icon4 + .gear").removeClass("spinc");
+            $("#image-icon5 + .gear").removeClass("spincc");
+        }
+
+        
+    </script>
 		
 </body>
 
