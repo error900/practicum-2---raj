@@ -31,9 +31,9 @@ class ServiceController extends \BaseController {
                 {
                     $message->from($data['email'], $data['name']);
 					$message->subject($data['service']);
-					$message->cc('karllester.napadao@gmail.com');
+					$message->cc('rajcombaguio@gmail.com');
 					$message->ReplyTo($data['email']);
-					$message->to('karllester.napadao@gmail.com', 'RAJ Technologies Inc.');
+					$message->to('rajcombaguio@gmail.com', 'RAJ Technologies Inc.');
                 });
 				Session::flash('message-service-quote', 'Requested Service Quote Sent!');
                 return Redirect::to('services-page');

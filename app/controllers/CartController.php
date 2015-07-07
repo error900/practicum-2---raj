@@ -90,7 +90,7 @@ class CartController extends \BaseController {
 					$message->subject($data['subject']);
 					$message->cc('inquiry@rajtechinc.com');
 					$message->ReplyTo($data['email']);
-					$message->to('inquiry@rajtechinc.com', 'RAJ Technologies Inc.');
+					$message->to('rajcombaguio@gmail.com', 'RAJ Technologies Inc.');
                 });
 				Session::flash('message-quote', 'Requested Quote Sent!');
                 return Redirect::to('product-compare');

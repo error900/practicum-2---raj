@@ -17,13 +17,9 @@ class FeatureController extends BaseController
                 'title' => 'Dashboard',
                 'link' => 'dashboard',
                 'icon' => 'fa fa-tachometer'
-            ),
-            /*array(
-                'title' => 'Current Page',
-                'link' => 'dashboard/current',
-                'icon' => 'glyphicon-plus'
-            ),*/
+            )
         );
+
     }
 
 }

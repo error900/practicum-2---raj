@@ -82,7 +82,7 @@ return array(
 	*/
 
 	//'username' => 'rajcombaguio@gmail.com'
-	'username' => 'karllester.napadao@gmail.com',
+	'username' => 'rajcombaguio@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return array(
 	*/
 
 	//'password' => 'rajcomb@guI0',\
-	'password' => 'aavixmccbhkwgdvc',
+	'password' => 'cwcweetefhxqkmqu',
 
 	/*
 	|--------------------------------------------------------------------------

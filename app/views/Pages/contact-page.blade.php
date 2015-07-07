@@ -21,7 +21,9 @@
             </div>
         </div>
         <!-- /.row -->
-
+        @if (Session::has('message-contact'))
+		<div class="alert alert-success">{{ Session::get('message-contact') }}</div>
+		@endif			
         <!-- Content Row -->
         <div class="row">
             <!-- Map Column -->
@@ -59,10 +61,7 @@
 						</div>
 					@endif
 
-					@if (Session::has('message-contact'))
-					<div class="alert alert-success">{{ Session::get('message-contact') }}</div>
-					@endif
-					
+										
 					{{ Form::open(array('action' => 'ContactController@contact_inquire')) }}
 					
 					<div class="form-group">

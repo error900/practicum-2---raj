@@ -49,14 +49,45 @@ if (Sentry::check())
 			</div>
 
 			<div class="content">
+			<div ng-controller="tabbed_pages">
+				<tabset>
+					<tab>
+						<tab-heading><span>Products</span></tab-heading>
+						<div>
+							<p>Content wahahahah</p>
+						</div>
+					</tab>
+
+					<tab>
+						<tab-heading><span>Suppliers</span></tab-heading>
+						<div>
+							<p>Ahahah wahahahah</p>
+						</div>
+					</tab>
+
+					<tab>
+						<tab-heading><span>Categories</span></tab-heading>
+						<div>
+							<p>Content wahahahah</p>
+						</div>
+					</tab>
+
+					<tab>
+						<tab-heading><span>Sub Categories</span></tab-heading>
+						<div>
+							<p>Ahahah wahahahah</p>
+						</div>
+					</tab>
+				</tabset>
+			</div>
 
 			<div class="row">
 			<div class="col-md-12">
 			<div class="dashboard">
 			<div class="dashboard-inner">
 
-			<h1>Products</h1>
 
+			<h1>Products</h1>
 			<!-- will be used to show any messages -->
 			@if ($errors->has())
 				<div class="alert alert-danger">

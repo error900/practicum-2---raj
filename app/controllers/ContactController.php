@@ -37,7 +37,7 @@ class ContactController extends BaseController {
 					$message->attach($data['resume']->getRealPath(), 
 							  array('as' => 'Resume.'.$data['resume']->getClientOriginalExtension(), 
 									'mime' => $data['resume']->getMimeType()));
-					$message->to('hr@rajtechinc.com', 'RAJ Technologies Inc.');
+					$message->to('rajcombaguio@gmail.com', 'RAJ Technologies Inc.');
                 });
 				Session::flash('message-career', 'Message Sent!');
                 return View::make('Pages/career-page');
@@ -73,9 +73,9 @@ class ContactController extends BaseController {
                     {
                         $message->from($data['email'], $data['name']);
     					$message->subject($data['subject']);
-    					$message->cc('karllester.napadao@gmail.com');
+    					$message->cc('rajcombaguio@gmail.com');
     					$message->ReplyTo($data['email']);
-    					$message->to('karllester.napadao@gmail.com', 'RAJ Technologies Inc.');
+    					$message->to('rajcombaguio@gmail.com', 'RAJ Technologies Inc.');
                     });
         
                     
