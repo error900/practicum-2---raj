@@ -333,119 +333,149 @@ p.services-definition {
 	#image-icon5 + .gear {
 		position: absolute;
 		z-index: 0;
-		-webkit-transition: -webkit-transform 1s ease-in-out;
-		transition: transform 1s ease-in-out;
+/*		-webkit-transition: -webkit-transform 1s ease-in-out;
+		transition: transform 1s ease-in-out;*/
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 5s;
+		-moz-transition-property: -moz-transform;
+		-moz-transition-duration: 5s;
+		transition-property: transform;
+		transition-duration: 5s;
 	}
 
 	#image-icon1 {
 		height: 120px;
 		width: 120px;
 		bottom: 49px;
-		left: 240px;
+		right: 540px;
 	}
 
 	#image-icon2 {
 		height: 97px;
 		width: 97px;
-		bottom: 12px;
-		left: 358px;
+		bottom: 100px;
+		left: 582px;
 	}
 
 	#image-icon3 {
 		height: 100px;
 		width: 100px;
-		bottom: 56px;
-		left: 499px;
+		bottom: 60px;
+		right: 177px;
 	}
 
 	#image-icon4 {
 		height: 65px;
 		width: 65px;
-		bottom: 103px;
-		left: 420px;
+		bottom: 130px;
+		right: 279px;
 	}
 
 	#image-icon5 {
 		height: 76px;
 		width: 76px;
-		bottom: 24px;
-		left: 164px;
+		top: 225px;
+		right: 490px;
 	}
 
 	#image-icon1 + .gear {
 		height: 100px;
 		width: 100px;
-		left: 250px;
+		right: 550px;
 		bottom: 55px;
 	}
 
 	#image-icon2 + .gear {
 		height: 80px;
 		width: 80px;
-		left: 366px;
-		bottom: 35px;
+		left: 590px;
+		bottom: 125px;
 	}
 
 	#image-icon3 + .gear {
 		height: 78px;
 		width: 78px;
-		bottom: 65px;
-		left: 510px;
+		bottom: 70px;
+		right: 188px;
 	}
 
 	#image-icon4 + .gear {
 		height: 55px;
 		width: 55px;
-		bottom: 109px;
-		left: 434px;
+		bottom: 136px;
+		right: 275px;
 	}
 
 	#image-icon5 + .gear {
 		height: 66px;
 		width: 66px;
-		left: 168px;
-		bottom: 35px;
-	}
-
-	#image-icon1:hover + .gear,
-	#image-icon2:hover + .gear,
-	#image-icon3:hover + .gear,
-	#image-icon4:hover + .gear,
-	#image-icon5:hover + .gear {
-		opacity: 1;
+		right: 496px;
+		top: 225px;
 	}
 
 	/* spin */
 
 	#image-icon1:hover + .gear,
 	#image-icon3:hover + .gear {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-		transition: 3s ease-in;
+		-webkit-animation-name: rotatec; 
+		-webkit-animation-duration: 2s; 
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-name: rotatec; 
+		-moz-animation-duration: 2s; 
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		animation-name: rotatec; 
+		animation-duration: 2s; 
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 
 	#image-icon2:hover + .gear,
 	#image-icon4:hover + .gear,
 	#image-icon5:hover + .gear {
-		-webkit-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-		transition: 3s ease-in;
+		-webkit-animation-name: rotatecc; 
+		-webkit-animation-duration: 2s; 
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-name: rotatecc; 
+		-moz-animation-duration: 2s; 
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		animation-name: rotatecc; 
+		animation-duration: 2s; 
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 
 	.spinc {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-		transition: 2s ease-in !important;
+		-webkit-animation-name: rotatec; 
+		-webkit-animation-duration: 6s !important; 
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-name: rotatec; 
+		-moz-animation-duration: 6s !important; 
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		animation-name: rotatec; 
+		animation-duration: 6s !important; 
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 
 	.spincc {
-		-webkit-transform: rotate(-360deg);
-		transform: rotate(-360deg);
-		transition: 2s ease-in !important;
-	}
-
-	.spin {
-
+		-webkit-animation-name: rotatecc; 
+		-webkit-animation-duration: 6s !important; 
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-name: rotatecc; 
+		-moz-animation-duration: 6s !important; 
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: linear;
+		animation-name: rotatecc; 
+		animation-duration: 6s !important; 
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 	
 	.service-title,
@@ -485,8 +515,8 @@ p.services-definition {
 	.service-title {
 		width: 650px;
 		padding: 20px 20px 5px 60px;
-		font-family: 'Open Sans Semibold';
-		top: 100px;
+		font-family: 'PT Sans Bold';
+		top: 135px;
 		color: #FFA400;
 		font-size: 25px;
 		letter-spacing: 1px;
@@ -497,11 +527,41 @@ p.services-definition {
 
 	.service-description {
 		width: 550px;
-		top: 160px;
+		top: 190px;
 		padding: 0 20px 20px 90px;
 		color: #fff;
 		font-size: 13px;
 	}
+}
+
+@-webkit-keyframes rotatec {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotatec {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotatec {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotatecc {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+
+@-moz-keyframes rotatecc {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(-360deg);}
+}
+
+@keyframes rotatecc {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
 }
 
 @media(max-width:1024px) {

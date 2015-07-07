@@ -18,28 +18,28 @@
 
     		</a>
     		<a href="{{ URL::to('imaging-solutions') }}">
-                <img id="image-icon2" src="{{ asset('Assets/img/slider/icon2.png') }}" width="130px" height="130px"/>
+                <img id="image-icon2" onmouseover="mouseOver2()" onmouseout="mouseOut2()" src="{{ asset('Assets/img/slider/icon2.png') }}" width="130px" height="130px"/>
                 <img class="gear" src="{{ asset('Assets/img/slider/gear2.png') }}">
                 <p class="service-title">Imaging Solution Services</p>
                 <p class="service-description">Imaging Solutions mean custom office equipment packages to address your specific wants and needs. By combining quality digital printer, copier, scanner and fax hardware, with our excellent customer support.</p>
 
     		</a>
     		<a href="{{ URL::to('information-technology') }}">
-                <img id="image-icon3" src="{{ asset('Assets/img/slider/icon3.png') }}" width="130px" height="130px"/>
+                <img id="image-icon3" onmouseover="mouseOver3()" onmouseout="mouseOut3()" src="{{ asset('Assets/img/slider/icon3.png') }}" width="130px" height="130px"/>
                 <img class="gear" src="{{ asset('Assets/img/slider/gear3.png') }}">
                 <p class="service-title">2-Way Radio Communication Services</p>
                 <p class="service-description">Our diverse array of portable and mobile two-way radios better enable you to efficiently coordinate and communicate with your on-the-go workforce, regardless of whether you have a small shop or a large nationwide business.</p>
 
     		</a>
     		<a href="{{ URL::to('security-and-surveillance') }}">
-                <img id="image-icon4" src="{{ asset('Assets/img/slider/icon4.png') }}" width="130px" height="130px"/>
+                <img id="image-icon4" onmouseover="mouseOver4()" onmouseout="mouseOut4()" src="{{ asset('Assets/img/slider/icon4.png') }}" width="130px" height="130px"/>
                 <img class="gear" src="{{ asset('Assets/img/slider/gear4.png') }}">
                 <p class="service-title">Security &amp; Surveillance Services</p>
                 <p class="service-description">Our expertise includes access control, video surveillance, integrated physical/logical security and intrusion alarms. Our strong experience with 100 percent IP-based systems that lower cost and improve network flexibility and scalability.</p>
 
     		</a>
     		<a href="{{ URL::to('renewable-energy') }}">
-                <img id="image-icon5" src="{{ asset('Assets/img/slider/icon5.png') }}" width="130px" height="130px"/>
+                <img id="image-icon5" onmouseover="mouseOver5()" onmouseout="mouseOut5()" src="{{ asset('Assets/img/slider/icon5.png') }}" width="130px" height="130px"/>
                 <img class="gear" src="{{ asset('Assets/img/slider/gear5.png') }}">
                 <p class="service-title">Renewable Energy Services</p>
                 <p class="service-description">Solar technologies are an effective and increasingly economic choice as conventional energy prices rise. We have the capabilities to develop, construct, operate and optimise the operation of solar powered facilities.</p>
@@ -156,21 +156,109 @@
 
     <script>
         function mouseOver1() {
-            $("#image-icon2 + .gear").addClass("spinc");
-            $("#image-icon3 + .gear").addClass("spincc");
-            $("#image-icon4 + .gear").addClass("spinc");
+            $("#image-icon2 + .gear").addClass("spincc");
+            $("#image-icon3 + .gear").addClass("spinc");
+            $("#image-icon4 + .gear").addClass("spincc");
             $("#image-icon5 + .gear").addClass("spincc");
         }
 
         function mouseOut1() {
-            $("#image-icon2 + .gear").removeClass("spinc");
-            $("#image-icon3 + .gear").removeClass("spincc");
-            $("#image-icon4 + .gear").removeClass("spinc");
+            $("#image-icon2 + .gear").removeClass("spincc");
+            $("#image-icon3 + .gear").removeClass("spinc");
+            $("#image-icon4 + .gear").removeClass("spincc");
             $("#image-icon5 + .gear").removeClass("spincc");
+        }
+
+        function mouseOver2() {
+            $("#image-icon1 + .gear").addClass("spinc");
+            $("#image-icon3 + .gear").addClass("spinc");
+            $("#image-icon4 + .gear").addClass("spincc");
+            $("#image-icon5 + .gear").addClass("spincc");
+        }
+
+        function mouseOut2() {
+            $("#image-icon1 + .gear").removeClass("spinc");
+            $("#image-icon3 + .gear").removeClass("spinc");
+            $("#image-icon4 + .gear").removeClass("spincc");
+            $("#image-icon5 + .gear").removeClass("spincc");
+        }
+
+        function mouseOver3() {
+            $("#image-icon1 + .gear").addClass("spinc");
+            $("#image-icon2 + .gear").addClass("spincc");
+            $("#image-icon4 + .gear").addClass("spincc");
+            $("#image-icon5 + .gear").addClass("spincc");
+        }
+
+        function mouseOut3() {
+            $("#image-icon1 + .gear").removeClass("spinc");
+            $("#image-icon2 + .gear").removeClass("spincc");
+            $("#image-icon4 + .gear").removeClass("spincc");
+            $("#image-icon5 + .gear").removeClass("spincc");
+        }
+
+        function mouseOver4() {
+            $("#image-icon1 + .gear").addClass("spinc");
+            $("#image-icon2 + .gear").addClass("spincc");
+            $("#image-icon3 + .gear").addClass("spinc");
+            $("#image-icon5 + .gear").addClass("spincc");
+        }
+
+        function mouseOut4() {
+            $("#image-icon1 + .gear").removeClass("spinc");
+            $("#image-icon2 + .gear").removeClass("spincc");
+            $("#image-icon3 + .gear").removeClass("spinc");
+            $("#image-icon5 + .gear").removeClass("spincc");
+        }
+
+        function mouseOver5() {
+            $("#image-icon1 + .gear").addClass("spinc");
+            $("#image-icon2 + .gear").addClass("spincc");
+            $("#image-icon3 + .gear").addClass("spinc");
+            $("#image-icon4 + .gear").addClass("spincc");
+        }
+
+        function mouseOut5() {
+            $("#image-icon1 + .gear").removeClass("spinc");
+            $("#image-icon2 + .gear").removeClass("spincc");
+            $("#image-icon3 + .gear").removeClass("spinc");
+            $("#image-icon4 + .gear").removeClass("spincc");
         }
 
         
     </script>
+
+    <script type="text/javascript"> 
+        $(window).scroll(function() { 
+            // The social div 
+            var $socialDiv = $('.hero_text'); 
+
+            //Get scroll position of window 
+            var windowScroll = $(this).scrollTop(); 
+
+            //Slow scroll of social div and fade it out 
+            $socialDiv.css({ 
+                'margin-top' : - (windowScroll / 3) + "px", 
+                'opacity' : 1 - (windowScroll / 550) 
+            }); 
+        }); 
+    </script>​
+
+    <script type="text/javascript"> 
+        $(window).scroll(function() { 
+            // The social div 
+            var $socialDiv = $('.columbus'); 
+
+            //Get scroll position of window 
+            var windowScroll = $(this).scrollTop(); 
+
+            //Slow scroll of social div and fade it out 
+            $socialDiv.css({ 
+                'margin-top' : - (windowScroll / 5) + "px", 
+                'opacity' : 1 - (windowScroll / 550) 
+            }); 
+        }); 
+    </script>​
 		
 </body>
 
