@@ -1,7 +1,8 @@
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="{{ asset('Assets/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('Assets/css/bootstrap.min.css') }}" media="all" />
         <link href="{{ asset('Assets/font-awesome/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('Assets/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
         @if(Config::get('syntara::config.direction') === 'rtl')
             <link rel="stylesheet" href="{{ asset('packages/mrjuliuss/syntara/assets/css/bootstrap-rtl.min.css') }}" media="all">
             <link rel="stylesheet" href="{{ asset('packages/mrjuliuss/syntara/assets/css/base-rtl.css') }}" media="all">

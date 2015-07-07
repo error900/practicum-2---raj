@@ -13,7 +13,7 @@
                         <li><a href="{{ URL::to('contact-page') }}">Contact</a></li>
                         <div class="hr-nav-line hidden-lg hidden-md"></div>
                         <li><a href="{{ URL::to('career-page') }}">Careers</a></li>
-                        <li><a href="{{ URL::to('dashboard') }}" class="btn btn-default login-btn">Login</a></li>
+                        <li><a href="{{ URL::to('dashboard') }}" class="btn btn-default login-btn disabled">Login</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">

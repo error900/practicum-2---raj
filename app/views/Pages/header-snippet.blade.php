@@ -1,6 +1,5 @@
 
-<head>
-
+<head lang="en">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +7,7 @@
     <meta name="description" content="Information Technology, Electronics, Communication Products and Services">
     <meta name="author" content="RAJ Technologies Inc.">
 
-    <title>RAJ Technologies Inc. - IT Services, Consulting, System Integration & IT Outsourcing</title>
+    <title>RAJ Technologies Inc. - IT Services, Consulting, System Integration &amp; IT Outsourcing</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('Assets/css/bootstrap.min.css') }}" rel="stylesheet">

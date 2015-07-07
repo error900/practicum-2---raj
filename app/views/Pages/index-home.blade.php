@@ -8,7 +8,7 @@
 @include('Pages.header-nav-snippet')
 
     <div class="rajtech-bg-image">
-        <div class="services-offered">
+        <div class="services-offered hidden-xs hidden-sm">
     		<a href="{{ URL::to('two-way-radio-communication') }}">
                 <img id="image-icon1" onmouseover="mouseOver1()" onmouseout="mouseOut1()" src="{{ asset('Assets/img/slider/icon1.png') }}" width="160px" height="160px"/>
                 <img class="gear" src="{{ asset('Assets/img/slider/gear1.png') }}">
@@ -247,7 +247,7 @@
     <script type="text/javascript"> 
         $(window).scroll(function() { 
             // The social div 
-            var $socialDiv = $('.columbus'); 
+            var $socialDiv = $('.services-offered'); 
 
             //Get scroll position of window 
             var windowScroll = $(this).scrollTop(); 
