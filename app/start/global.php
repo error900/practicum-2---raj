@@ -17,6 +17,7 @@ ClassLoader::addDirectories(array(
 	app_path().'/controllers',
 	app_path().'/models',
 	app_path().'/database/seeds',
+	app_path().'/validation',
 
 ));
 
@@ -77,5 +78,9 @@ App::down(function()
 | definitions instead of putting them all in the main routes file.
 |
 */
+
+Validator::resolver(function($translator, $data, $rules, $messages) {
+        return new CustomValidator($translator, $data, $rules, $messages);
+    });
 
 require app_path().'/filters.php';

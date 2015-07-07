@@ -324,7 +324,7 @@ class ProductController extends BaseController {
 		// validate
         // read more on validation at http://laravel.com/docs/validation
         $rules = array(
-            'supplierName' => 'required|alpha_dash|unique:productSuppliers'
+            'supplierName' => 'required|alphameric_spaces|unique:productSuppliers'
         );
         $validator = Validator::make(Input::all(), $rules);
 
@@ -350,7 +350,7 @@ class ProductController extends BaseController {
 		// validate
         // read more on validation at http://laravel.com/docs/validation
         $rules = array(
-            'categoryName' => 'required|alpha_dash|unique:productCategories'
+            'categoryName' => 'required|alphameric_spaces|unique:productCategories'
         );
         $validator = Validator::make(Input::all(), $rules);
 
@@ -376,7 +376,7 @@ class ProductController extends BaseController {
 		// validate
         // read more on validation at http://laravel.com/docs/validation
         $rules = array(
-            'subcategoryName' => 'required|alpha_dash|unique:productSubcategories'
+            'subcategoryName' => 'required|alphameric_spaces|unique:productSubcategories'
         );
         $validator = Validator::make(Input::all(), $rules);
 
