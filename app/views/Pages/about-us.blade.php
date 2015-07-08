@@ -28,7 +28,7 @@
                 <h1 class="text-center header1">RAJ Technologies Inc.</h1>
             </div>
             <div class="col-xs-12 col-md-4">
-                <img class="img-responsive" src="{{ asset('Assets/img/RAJ-White.jpg') }}" alt="RAJ Technologies Inc.">
+                <img class="img-responsive" src="{{ asset('Assets/img/logo3.png') }}" alt="RAJ Technologies Inc.">
             </div>
             <div class="col-xs-12 col-md-8">
                 <p>Our Company is a type of business or industry that focuses on the provision of IT Services and Solutions, Sale and Service of Communications Equipment. Of late, it has ventured into providing  Document Imaging services as it partners with Canon Philippines.</p>
