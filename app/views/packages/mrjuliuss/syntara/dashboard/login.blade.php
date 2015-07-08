@@ -4,7 +4,7 @@
 <script type="text/javascript" src="{{ asset('packages/mrjuliuss/syntara/assets/js/dashboard/login.js') }}"></script>
 <div class="container-fluid">
     <div class="row" style="margin-top: 20px;">
-        <div class="col-xs-12 col-md-4 col-md-offset-4 login">
+        <div class="col-md-4 col-md-offset-4 login">
             <form id="login-form" method="post" class="form-horizontal">
                 <div class="form-group account-username">
                     @if($loginAttribute === 'email')

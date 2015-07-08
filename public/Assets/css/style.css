@@ -578,8 +578,9 @@ body {
     height: 100%;
 	font-family: 'PT Sans', Helvetica, sans-serif;
 	color: #6a6565;
-	background-image: url('../img/3px-tile.png');
-	background-color: #000028;	
+	/*background-image: url('../img/3px-tile.png');*/
+	/*background-color: #000028;*/	
+	background-color: #ecf0f1;
 }
 
 body {
@@ -692,7 +693,7 @@ i.fa.fa-home {
 }
 
 .bg-plain {
-	background-color: #fff !important;
+	background-color: #ecf0f1 !important;
 }
 
 .hr-nav-line {
@@ -710,6 +711,17 @@ i.fa.fa-home {
 
 	body {
 		padding-top: 80px;
+	}
+
+	.logo {
+		background-image: url('../img/logo.png');
+		height: 30px;
+		width: 55px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 15px;
+		left: 135px;
 	}
 
 	.about {
@@ -760,9 +772,9 @@ i.fa.fa-home {
 	}
 
 	.rajtech-bg-image {
-		background-position-y: 80px !important;
+		background-position-y: 50px !important;
 		width: 100% !important;
-		height: 460px !important;
+		height: 430px !important;
 	}
 
 	.nav-position-abs {
@@ -772,18 +784,29 @@ i.fa.fa-home {
 		float: none !important;
 	}
 
+	.navbar>.container-fluid .navbar-brand {
+		margin: 0px 0 0 110px;
+		padding: 15px 10px;
+		font-size: 15px !important;
+	}
+
+	.navbar>.container-fluid .navbar-brand > span {
+		padding-right: 35px;
+	}
+
 	.navbar-brand {
 		font-size: 20px !important;
 	}
 
 	.nav-wide {
-		padding: 15px;
+/*		padding: 15px;
+		height: 100px;*/
 	}
 
 	.navbar-inverse .navbar-nav>li>a {
 		padding-left: 15px !important;
 		border-bottom: 2px solid transparent;
-		font-size: 18px !important;
+		font-size: 14px !important;
 		text-transform: uppercase;
 		color: #ecf0f1 !important;
 	}
@@ -795,7 +818,7 @@ i.fa.fa-home {
 
 	.navbar-inverse .navbar-nav>li>a:hover {
 		background-color: transparent !important;
-		border-bottom: 2px solid #3498db;
+		border-bottom: 2px solid #34495e;
 		color: #fff;
 /*		-webkit-transition: all 0.5s ease-in-out;
 		-moz-transition: all 0.5s ease-in-out;
@@ -974,32 +997,36 @@ i.fa.fa-home {
 	background-size: contain;
 	background-position-y: 50px;
 	width: 100%;
-	height: 150px;
-	background-color: #000028;
+	height: 130px;
 	position: relative;
 }
 
 
 .navbar-inverse {
-	background-color: rgba(0, 0, 40, 0.95);
-	border-color: #080808;
-	background-image: url('../img/3px-tile.png');
+	/*background-color: rgba(0, 0, 40, 0.95);
+	background-image: url('../img/3px-tile.png');*/
+	background-color: #ecf0f1;
+	border-color: #aaa;
 }
 
 .navbar-brand {
 	font-family: 'Open Sans Semibold';
 	font-size: 16px;
 	font-weight: 900;
-	color: #ecf0f1 !important;
+	color: #2c3e50 !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
 	padding-left: 30px;
-	font-family: 'PT Sans Narrow Bold';
-	font-size: 16px;
-	color: #fff !important;
-	text-shadow: 0px 1px 0px #34495E;
+	font-family: 'Open Sans Semibold';
+	font-size: 14px;
+	color: #aaa !important;
+	text-shadow: 0px 0px 0px #34495E;
 	text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
 }
 
 .navbar-inverse .navbar-nav>.open>a,
@@ -1014,7 +1041,7 @@ i.fa.fa-home {
 		padding-left: 50px;
 		font-family: 'PT Sans Narrow Bold';
 		color: #fff !important;
-		font-size: 14px;
+		font-size: 8px;
 		text-shadow: 0px 1px 0px #34495E;
 		text-transform: uppercase;
 	}
