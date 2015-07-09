@@ -169,7 +169,7 @@ header {
 .contact-form textarea {
 	padding: 10px;
 	width: 100% !important;
-	resize: vertical;
+	min-height: 100px;
 }
 
 .contact-form input {
@@ -584,8 +584,8 @@ p.services-definition {
 
 .marker {
 	position: absolute;
-	top: 107px;
-	left: 365px;
+	top: 145px;
+	left: 85px;
 }
  
 /* Global Styles */
@@ -846,6 +846,11 @@ i.fa.fa-home {
 		width: 470px;
 	}
 
+	.contact-form textarea  {
+		min-height: 20px !important;
+		resize: none;
+	}
+
 	.breadcrumb-nav {
 		padding: 10px 50px !important;
 	}
@@ -890,7 +895,7 @@ i.fa.fa-home {
 		padding-left: 15px !important;
 		border-bottom: 2px solid transparent;
 		font-size: 13px !important;
-		color: #000028 !important;
+		color: #aaa !important;
 	}
 
 	.navbar-inverse .navbar-nav>li>a:focus {
@@ -1083,7 +1088,7 @@ i.fa.fa-home {
 	font-family: 'Open Sans Semibold';
 	font-size: 14px;
 	color: #2c3e50;
-	/*text-shadow: 0px 0px 0px #34495E;*/
+	text-shadow: 0px 0px 0px #34495E;
 	text-transform: uppercase;
 }
 
