@@ -27,7 +27,7 @@
         <!-- Content Row -->
         <div class="row">
             <!-- Map Column -->
-            <div class="col-md-12">
+            <div class="col-md-12 map">
                 <!-- Google Map -->
                 <div id="map-canvas"></div>
             </div>
@@ -35,7 +35,7 @@
         <!-- /.row -->
         <div class="col-md-12 hr-row-line"></div>
         <!-- Contact Form -->
-        <div class="row">
+        <div class="row contact-row">
        		<!-- Contact Details Column -->
             <div class="col-md-5 col-md-offset-1 contact">
                 <div class="contact-details">
@@ -82,14 +82,14 @@
 					
 					<div class="form-group">
 						@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	
-						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
+						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea form-control', 'rows' => '6', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
 					</div>
 					
 					<center><div class="textarea_feedback"></div></center>
 					
 					<div class="form-group">
 						{{ Form::label('recaptcha_response_field', 'ReCaptcha :') }}@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
-						{{ Form::recaptcha(array('theme' => 'clean', 'use_ssl' => true)) }}
+						{{ Form::recaptcha(array('theme' => 'white', 'use_ssl' => true)) }}
 					</div>
 					<br />
 					{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}

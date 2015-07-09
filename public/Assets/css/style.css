@@ -138,12 +138,13 @@ header {
 }
 
 .contact-form {
-	margin-bottom: 20px;
+	margin: 20px 0;
 	padding: 0;
 }
 
 .contact-form .form-group {
 	position: relative;
+	margin-bottom: 5px !important;
 }
 
 .contact-form label {
@@ -167,7 +168,10 @@ header {
 
 .contact-form textarea {
 	padding: 10px;
+	width: 100% !important;
+	resize: vertical;
 }
+
 .contact-form input {
     height: 34px;
 }
@@ -563,6 +567,11 @@ p.services-definition {
     height: 350px;
     border: 5px solid #f8f8f8;
 }
+
+.map {
+	margin: 15px 0;
+	padding: 0;
+}
  
 /* Global Styles */
 
@@ -580,7 +589,6 @@ body {
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-
 
 body .row {
     margin-left: 0px;
@@ -782,6 +790,10 @@ i.fa.fa-home {
 		padding-left: 300px;
 	}
 
+	.contact-row {
+		margin: 55px 0 20px 0 !important;
+	}
+
 	.contact {
 		background-image: url('../img/contact.png');
 		background-repeat: no-repeat;
@@ -792,22 +804,27 @@ i.fa.fa-home {
 
 	.contact-details {
 		position: absolute;
-		top: 125px;
-		left: 125px;
 		width: 325px;
+		top: 88px;
+		left: 125px;
 	}
+
 
 	.contact-details p {
 		margin-bottom: 15px;
 		font-family: 'Open Sans Semibold';
 		font-size: 13px;
-		line-height: 1.4;
+		line-height: 25px;
 		color: #222;
 	}
 
-/*	.service-page {
-		padding: 15px 30px;
-	}*/
+	.contact-details p:first-child {
+		line-height: 16px;
+	}
+
+	.contact-form {
+		margin: 0;
+	}
 
 	.breadcrumb-nav {
 		padding: 10px 50px !important;
