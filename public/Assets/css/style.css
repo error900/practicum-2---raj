@@ -63,7 +63,7 @@ color: #CECECE;
 }
 
 .carousel-caption h4 {
-color: #313131;
+	color: #313131;
 }
 
 .pattern-divider {
@@ -137,26 +137,9 @@ header {
 	padding: 0;
 }
 
-.contact-details {
-	padding: 20px 10px;
-	font-size: 13px;
-}
-
-.contact-details > p {
-	margin: 5px;
-	min-height: 30px;
-}
-
-.contact-details > p > i {
-	margin-right: 10px !important;
-	margin-bottom: 10px !important;
-	padding-right: 15px;
-	width: 10px;
-	font-size: 15px;
-}
-
 .contact-form {
 	margin-bottom: 20px;
+	padding: 0;
 }
 
 .contact-form .form-group {
@@ -198,7 +181,7 @@ header {
 }
 
 .about h4 {
-	font-family: 'PTSerif Caption';
+	font-family: 'PT Sans Bold';
 	font-size: 14px;
 }
 
@@ -324,7 +307,7 @@ p.services-definition {
 
 @media (min-width:768px) {
 	.services-offered {
-
+		height: inherit;
 	}
 
 	#image-icon1,
@@ -591,11 +574,17 @@ body {
 	/*background-image: url('../img/3px-tile.png');*/
 	/*background-color: #000028;*/	
 	background-color: #ecf0f1;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+body .row {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .img-portfolio {
@@ -688,7 +677,7 @@ i.fa.fa-home {
 }
 
 .header1 {
-	margin: 0 0 30px 0;
+	margin: 25px 0 15px 0;
 	height: 30px;
 	font-family: 'PT Sans Bold';
 	font-size: 17px;
@@ -709,10 +698,6 @@ i.fa.fa-home {
 	padding: 10px 0 25px;
 }
 
-.bg-plain {
-	background-color: #ecf0f1 !important;
-}
-
 .hr-nav-line {
 	margin: 0 auto;
 	width: 55%;
@@ -724,7 +709,7 @@ i.fa.fa-home {
 .hr-row-line {
 	margin: 15px auto;
 	background-image: url('../img/divider1.png');
-	height: 20px;
+	height: 5px;
 	background-repeat: repeat-x;
 }
 
@@ -751,22 +736,30 @@ i.fa.fa-home {
 
 	.about {
 		padding: 0 60px;
+		height: 250px;
 	}
 
 	.about p {
 		padding: 15px 25px;
-		font-size: 16px !important;
+		font-size: 14px !important;
 	}
 
 	.about h4 {
-		padding: 5px 25px;
-		font-size: 20px !important;
+		margin: 0;
+		padding: 40px 20px 5px 20px;
+		font-size: 48px !important;
 	}
 
 	.about img {
 		width: 345px;
 		margin: 0 auto;
 	}
+
+/*	.mission > p,
+	.vision > p,
+	.responsibility > p {
+		width: 40%;
+	}*/
 
 	.mission {
 		background-image: url('../img/mission.png');
@@ -784,13 +777,37 @@ i.fa.fa-home {
 	.vision,
 	.responsibility {
 		background-repeat: no-repeat;
-		background-position-x: 380px;
-		background-position-y: -135px;
+		background-position-x: 70px;
+		background-size: contain;
+		padding-left: 300px;
 	}
 
-	.service-page {
-		padding: 15px 30px;
+	.contact {
+		background-image: url('../img/contact.png');
+		background-repeat: no-repeat;
+		background-size: 450px 300px;
+		background-position-x: center; 
+		height: 300px;
 	}
+
+	.contact-details {
+		position: absolute;
+		top: 125px;
+		left: 125px;
+		width: 325px;
+	}
+
+	.contact-details p {
+		margin-bottom: 15px;
+		font-family: 'Open Sans Semibold';
+		font-size: 13px;
+		line-height: 1.4;
+		color: #222;
+	}
+
+/*	.service-page {
+		padding: 15px 30px;
+	}*/
 
 	.breadcrumb-nav {
 		padding: 10px 50px !important;
@@ -902,8 +919,8 @@ i.fa.fa-home {
 
 	.panel-default {
 		margin: 15px auto;
-		min-height: 200px;
-		max-height: 200px;
+		min-height: 210px !important;
+		max-height: 210px !important;
 		width: 90%;
 	}
 
@@ -979,28 +996,6 @@ i.fa.fa-home {
 	.product-image2 {
 		height: 280px;
 		margin: auto;
-	}
-
-	.contact-details {
-		padding: 15px;
-		background-color: #333;
-		position: absolute;
-		min-height: 140px;
-		width: 500px;
-		color: #89C4F4;
-		bottom: 20px;
-		left: 35px;
-	}
-
-	.contact-details > p {
-		margin: 0 10px !important;
-	}
-
-	.contact-details > p > i {
-		font-size: 16px;
-		margin: 0 !important;
-		margin-bottom: 7px !important;
-		padding-right: 23px;
 	}
 
 	.product-badge {
@@ -1207,8 +1202,10 @@ i.fa.fa-home {
 }
 
 .services-panels {
-	padding-top: 15px;
+	padding-top: 30px;
 	border-top: 15px solid #2c3e50;
+	margin-left: -15px !important;
+	margin-right: -15px !important;
 }
 
 .service-panel-icon img {

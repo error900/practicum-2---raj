@@ -128,7 +128,7 @@
 
     <div class="container-fluid bg-plain">
         <div class="row">
-            <div class="hr-row-line"></div>
+            <div class="col-md-12 hr-row-line"></div>
             <div class="col-md-12">
                 <h2 class="text-center header1">Products</h2>
             </div>
@@ -227,7 +227,12 @@
 
         
     </script>
-
+    <script type="text/javascript"> 
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            $('.services-offered').css({'opacity':(( 300-scroll )/300)});
+        });
+    </script>​
     <script type="text/javascript"> 
         $(window).scroll(function() { 
             // The social div 
@@ -244,21 +249,7 @@
         }); 
     </script>​
 
-    <script type="text/javascript"> 
-        $(window).scroll(function() { 
-            // The social div 
-            var $socialDiv = $('.services-offered'); 
-
-            //Get scroll position of window 
-            var windowScroll = $(this).scrollTop(); 
-
-            //Slow scroll of social div and fade it out 
-            $socialDiv.css({ 
-                'margin-top' : - (windowScroll / 5) + "px", 
-                'opacity' : 1 - (windowScroll / 550) 
-            }); 
-        }); 
-    </script>​
+    
 		
 </body>
 

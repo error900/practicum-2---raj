@@ -11,15 +11,15 @@
     <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row breadcrumb-nav">
+<!--         <div class="row breadcrumb-nav">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
-                    <li><a href="{{ URL::to('home') }}"><i class="fa fa-home"></i>Home</a>
+                    <li><a href="{{ URL::to('home') }}">
                     </li>
                     <li class="active">Contact</li>
                 </ol>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
         @if (Session::has('message-contact'))
 		<div class="alert alert-success">{{ Session::get('message-contact') }}</div>
@@ -27,32 +27,33 @@
         <!-- Content Row -->
         <div class="row">
             <!-- Map Column -->
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <!-- Google Map -->
                 <div id="map-canvas"></div>
             </div>
-            <!-- Contact Details Column -->
-            <div class="col-md-4">
-                <h3 class="custom-header">Contact Details</h3><hr />
-                <p><i style="color: #f75c50;" class="fa fa-map-marker"></i>
-					<abbr title="Address">A</abbr> : 2/F RAJ Bldg. #7, Labsan St., Kayang Extn. Brgy.,<br />
-					Baguio City, Benguet, Philippines.</p>
-                <p><i style="color: #018bd3;" class="fa fa-phone"></i> 
-                    <abbr title="Phone Number">P</abbr> : (6374) 619 - 2349</p>
-                <p><i style="color: #00827d;" class="fa fa-envelope-o"></i> 
-                    <abbr title="Email Address">E</abbr> : <a name="link">inquiry@rajtechinc.com</a></p>
-                <p><i style="color: #314e6c;" class="fa fa-clock-o"></i> 
-                    <abbr title="Shop Hours">H</abbr> : Monday - Friday: 9:00 AM to 5:30 PM</p>
-				<br />
-            </div>
         </div>
         <!-- /.row -->
-
+        <div class="col-md-12 hr-row-line"></div>
         <!-- Contact Form -->
         <div class="row">
-            <div class="contact-form col-md-8">
-                <h3 class="page-header">Send us a Message</h3>
-                
+       		<!-- Contact Details Column -->
+            <div class="col-md-5 col-md-offset-1 contact">
+                <div class="contact-details">
+					<p>
+						2/F RAJ Bldg. #7, Labsan St., Kayang Extn. Brgy., Baguio City, Benguet, Philippines.
+					</p>
+					<p>
+						(6374) 619 - 2349
+					</p>
+					<p>
+						inquiry@rajtechinc.com
+					</p>
+					<p>
+						Monday - Friday: 8:00 AM to 5:30 PM
+					</p>
+                </div>
+            </div>
+            <div class="contact-form col-md-5">
 					@if ($errors->has())
 						<div class="alert alert-danger">
 							@foreach ($errors->all() as $error)
@@ -65,23 +66,23 @@
 					{{ Form::open(array('action' => 'ContactController@contact_inquire')) }}
 					
 					<div class="form-group">
-						{{ Form::label('name', 'Name :') }} @if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	<br />
-						{{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'placeholder' => 'your name . . .')) }}
+						@if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	
+						{{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'placeholder' => 'Full Name')) }}
 					</div>
 					
 					<div class="form-group">
-						{{ Form::label('email', 'Email :') }}@if ($errors->has('email')) <span class="alert alert-danger">{{ $errors->first('email') }}</span> @endif	<br />
-						{{ Form::text('email', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'your email . . .')) }}
+						@if ($errors->has('email')) <span class="alert alert-danger">{{ $errors->first('email') }}</span> @endif	
+						{{ Form::text('email', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'Email Address')) }}
 					</div>
 					
 					<div class="form-group">
-						{{ Form::label('subject', 'Subject :') }}@if ($errors->has('subject')) <span class="alert alert-danger">{{ $errors->first('subject') }}</span> @endif	<br />
-						{{ Form::text('subject', Input::old('subject'), array('class' => 'form-control', 'placeholder' => 'your subject . . .')) }}
+						@if ($errors->has('subject')) <span class="alert alert-danger">{{ $errors->first('subject') }}</span> @endif	
+						{{ Form::text('subject', Input::old('subject'), array('class' => 'form-control', 'placeholder' => 'Subject')) }}
 					</div>
 					
 					<div class="form-group">
-						{{ Form::label('message', 'Message :') }}@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	<br />
-						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea', 'maxlength' => '1000', 'placeholder' => 'your message . . .')) }}
+						@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	
+						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
 					</div>
 					
 					<center><div class="textarea_feedback"></div></center>

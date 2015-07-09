@@ -31,7 +31,7 @@
                         <a href="{{ URL::to('services-page') }}">Services</a>
                     </li>
                     <li>
-                        <a href="{{ URL::to('contact-page') }}">Contact</a>
+                        <a href="{{ URL::to('contact-page') }}">Contact Us</a>
                     </li>
                     <li class="dropdown disabled">
                         <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Products <b class="caret"></b></a>
