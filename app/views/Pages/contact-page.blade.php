@@ -26,16 +26,21 @@
 		@endif			
         <!-- Content Row -->
         <div class="row">
+        	<h1 class="text-center header1">About Us</h1>
             <!-- Map Column -->
             <div class="col-md-12 map">
                 <!-- Google Map -->
-                <div id="map-canvas"></div>
+                <div id="map-canvas">
+                </div>
+                <div class="map-cover hidden-xs hidden-sm"></div>
+            	<img class="marker hidden-xs hidden-sm" src="{{ asset('Assets/img/marker.png') }}">
             </div>
         </div>
         <!-- /.row -->
         <div class="col-md-12 hr-row-line"></div>
         <!-- Contact Form -->
         <div class="row contact-row">
+        	<h1 class="text-center header1">Keep in touch</h1>
        		<!-- Contact Details Column -->
             <div class="col-md-5 col-md-offset-1 contact">
                 <div class="contact-details">
@@ -82,16 +87,15 @@
 					
 					<div class="form-group">
 						@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	
-						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea form-control', 'rows' => '6', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
+						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea form-control', 'rows' => '2', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
 					</div>
 					
 					<center><div class="textarea_feedback"></div></center>
 					
 					<div class="form-group">
-						{{ Form::label('recaptcha_response_field', 'ReCaptcha :') }}@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
+						@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
 						{{ Form::recaptcha(array('theme' => 'white', 'use_ssl' => true)) }}
 					</div>
-					<br />
 					{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}
 
 					{{ Form::close() }}

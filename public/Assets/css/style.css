@@ -155,7 +155,7 @@ header {
 
 .contact-form input, .contact-form textarea {
     width: 100%;
-    border: 2px solid #ecf0f1;
+    border: 2px solid #95a5a6;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -163,7 +163,7 @@ header {
     -webkit-box-shadow: none;
     box-shadow: none;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .contact-form textarea {
@@ -173,11 +173,13 @@ header {
 }
 
 .contact-form input {
-    height: 34px;
+	height: 40px;
+	padding: 5px 15px !important;
 }
 
 .textarea_feedback {
-	font-size: 12px;
+	font-size: 11px;
+	text-align: right;
 }
 
 .about p {
@@ -572,6 +574,19 @@ p.services-definition {
 	margin: 15px 0;
 	padding: 0;
 }
+
+.map-cover {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+}
+
+.marker {
+	position: absolute;
+	top: 107px;
+	left: 365px;
+}
  
 /* Global Styles */
 
@@ -792,6 +807,10 @@ i.fa.fa-home {
 
 	.contact-row {
 		margin: 55px 0 20px 0 !important;
+		height: 525px;
+		background-image: url('../img/envelope.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 525px;
 	}
 
 	.contact {
@@ -812,7 +831,7 @@ i.fa.fa-home {
 
 	.contact-details p {
 		margin-bottom: 15px;
-		font-family: 'Open Sans Semibold';
+		font-family: 'PTSerif Caption';
 		font-size: 13px;
 		line-height: 25px;
 		color: #222;
@@ -824,6 +843,7 @@ i.fa.fa-home {
 
 	.contact-form {
 		margin: 0;
+		width: 470px;
 	}
 
 	.breadcrumb-nav {
@@ -870,7 +890,7 @@ i.fa.fa-home {
 		padding-left: 15px !important;
 		border-bottom: 2px solid transparent;
 		font-size: 13px !important;
-		color: #aaa !important;
+		color: #000028 !important;
 	}
 
 	.navbar-inverse .navbar-nav>li>a:focus {
@@ -1063,7 +1083,7 @@ i.fa.fa-home {
 	font-family: 'Open Sans Semibold';
 	font-size: 14px;
 	color: #2c3e50;
-	text-shadow: 0px 0px 0px #34495E;
+	/*text-shadow: 0px 0px 0px #34495E;*/
 	text-transform: uppercase;
 }
 
@@ -1242,7 +1262,7 @@ i.fa.fa-home {
 .btn-primary {
     margin: 5px 0;
     width: 100%;
-    font-family: 'PT Sans Bold';
+	font-family: 'PT Sans Bold' !important;
     background-color: #2980b9;
     color: #fff;
     font-size: 16px;
