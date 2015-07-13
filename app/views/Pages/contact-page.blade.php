@@ -11,15 +11,15 @@
     <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-<!--         <div class="row breadcrumb-nav">
+        <div class="row breadcrumb-nav hidden-lg hidden-md">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
-                    <li><a href="{{ URL::to('home') }}">
+                    <li><a href="{{ URL::to('home') }}"><i class="fa fa-home"></i>Home</a>
                     </li>
-                    <li class="active">Contact</li>
+                    <li class="active">About</li>
                 </ol>
             </div>
-        </div> -->
+        </div>
         <!-- /.row -->
         @if (Session::has('message-contact'))
 		<div class="alert alert-success">{{ Session::get('message-contact') }}</div>
@@ -58,47 +58,49 @@
 					</p>
                 </div>
             </div>
+            <div class="col-md-12 hr-row-line"></div>
+
             <div class="contact-form col-md-5">
-					@if ($errors->has())
-						<div class="alert alert-danger">
-							@foreach ($errors->all() as $error)
-								{{ $error }}<br>        
-							@endforeach
-						</div>
-					@endif
+            	<h1 class="text-center header1">Keep in touch</h1>
+<!-- 				@if ($errors->has())
+					<div class="alert alert-danger">
+						@foreach ($errors->all() as $error)
+							{{ $error }}<br>        
+						@endforeach
+					</div>
+				@endif -->
+									
+				{{ Form::open(array('action' => 'ContactController@contact_inquire')) }}
+				
+				<div class="form-group">
+					@if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	
+					{{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'placeholder' => 'Full Name')) }}
+				</div>
+				
+				<div class="form-group">
+					@if ($errors->has('email')) <span class="alert alert-danger">{{ $errors->first('email') }}</span> @endif	
+					{{ Form::text('email', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'Email Address')) }}
+				</div>
+				
+				<div class="form-group">
+					@if ($errors->has('subject')) <span class="alert alert-danger">{{ $errors->first('subject') }}</span> @endif	
+					{{ Form::text('subject', Input::old('subject'), array('class' => 'form-control', 'placeholder' => 'Subject')) }}
+				</div>
+				
+				<div class="form-group">
+					@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	
+					{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea form-control', 'rows' => '2', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
+				</div>
+				
+				<center><div class="textarea_feedback"></div></center>
+				
+				<div class="form-group">
+					@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
+					{{ Form::recaptcha(array('theme' => 'white', 'use_ssl' => true)) }}
+				</div>
+				{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}
 
-										
-					{{ Form::open(array('action' => 'ContactController@contact_inquire')) }}
-					
-					<div class="form-group">
-						@if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	
-						{{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'placeholder' => 'Full Name')) }}
-					</div>
-					
-					<div class="form-group">
-						@if ($errors->has('email')) <span class="alert alert-danger">{{ $errors->first('email') }}</span> @endif	
-						{{ Form::text('email', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'Email Address')) }}
-					</div>
-					
-					<div class="form-group">
-						@if ($errors->has('subject')) <span class="alert alert-danger">{{ $errors->first('subject') }}</span> @endif	
-						{{ Form::text('subject', Input::old('subject'), array('class' => 'form-control', 'placeholder' => 'Subject')) }}
-					</div>
-					
-					<div class="form-group">
-						@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	
-						{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea form-control', 'rows' => '2', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
-					</div>
-					
-					<center><div class="textarea_feedback"></div></center>
-					
-					<div class="form-group">
-						@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
-						{{ Form::recaptcha(array('theme' => 'white', 'use_ssl' => true)) }}
-					</div>
-					{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}
-
-					{{ Form::close() }}
+				{{ Form::close() }}
             </div>
         </div>
         <!-- /.row -->

@@ -11,7 +11,7 @@
     <div class="container-fluid bg-plain">
 
         <!-- Page Heading/Breadcrumbs -->
-<!--         <div class="row breadcrumb-nav">
+        <div class="row breadcrumb-nav hidden-lg hidden-md">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
                     <li><a href="{{ URL::to('home') }}"><i class="fa fa-home"></i>Home</a>
@@ -19,7 +19,7 @@
                     <li class="active">About</li>
                 </ol>
             </div>
-        </div> -->
+        </div>
         <!-- /.row -->
 
         <!-- Intro Content -->

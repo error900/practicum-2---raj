@@ -387,9 +387,9 @@ Route::resource('Products', 'ProductController', array('before' => 'csrf'));
 /*
 	404 Error Page
 */
-/*
+
 App::missing(function($exception)
 {
     return Response::view('errors.404', array(), 404);
 });
-*/
+

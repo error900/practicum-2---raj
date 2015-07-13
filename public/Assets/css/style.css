@@ -120,16 +120,12 @@ header {
 /* alert */
 
 .alert-danger {
-	margin: 1px;
 	padding: 3px 8px !important;
 	font-family: 'PT Sans Bold';
 	background-color: #c0392b;
 	border-radius: 0;
 	color: #fff;
 	border: 0;
-	position: absolute;
-	top: -5px;
-	left: 0;
 	font-size: 13px;
 }
 
@@ -343,73 +339,73 @@ p.services-definition {
 	}
 
 	#image-icon1 {
-		height: 120px;
-		width: 120px;
-		bottom: 49px;
-		right: 540px;
+		height: 53px;
+		width: 61px;
+		bottom: 62px;
+		left: 380px;
 	}
 
 	#image-icon2 {
-		height: 97px;
-		width: 97px;
-		bottom: 100px;
-		left: 582px;
+		height: 45px;
+		width: 45px;
+		top: 142px;
+		left: 349px;
 	}
 
 	#image-icon3 {
-		height: 100px;
-		width: 100px;
-		bottom: 60px;
-		right: 177px;
+		height: 58px;
+		width: 27px;
+		top: 222px;
+		left: 565px;
 	}
 
 	#image-icon4 {
-		height: 65px;
-		width: 65px;
-		bottom: 130px;
-		right: 279px;
+		height: 37px;
+		width: 37px;
+		bottom: 142px;
+		left: 308px;
 	}
 
 	#image-icon5 {
-		height: 76px;
-		width: 76px;
-		top: 225px;
-		right: 490px;
+		height: 50px;
+		width: 50px;
+		top: 220px;
+		left: 443px;
 	}
 
 	#image-icon1 + .gear {
-		height: 100px;
-		width: 100px;
-		right: 550px;
-		bottom: 55px;
+		height: 120px;
+		width: 120px;
+		left: 348px;
+		bottom: 32px;
 	}
 
 	#image-icon2 + .gear {
-		height: 80px;
-		width: 80px;
-		left: 590px;
-		bottom: 125px;
+		height: 115px;
+		width: 115px;
+		top: 109px;
+		left: 315px;
 	}
 
 	#image-icon3 + .gear {
-		height: 78px;
-		width: 78px;
-		bottom: 70px;
-		right: 188px;
+		height: 116px;
+		width: 116px;
+		bottom: 118px;
+		left: 520px;
 	}
 
 	#image-icon4 + .gear {
-		height: 55px;
-		width: 55px;
-		bottom: 136px;
-		right: 275px;
+		height: 90px;
+		width: 90px;
+		bottom: 116px;
+		left: 284px;
 	}
 
 	#image-icon5 + .gear {
-		height: 66px;
-		width: 66px;
-		right: 496px;
-		top: 225px;
+		height: 105px;
+		width: 105px;
+		left: 416px;
+		top: 194px;
 	}
 
 	/* spin */
@@ -515,7 +511,8 @@ p.services-definition {
 		width: 650px;
 		padding: 20px 20px 5px 60px;
 		font-family: 'PT Sans Bold';
-		top: 135px;
+		top: 115px;
+		right: 85px;
 		color: #FFA400;
 		font-size: 25px;
 		letter-spacing: 1px;
@@ -526,7 +523,8 @@ p.services-definition {
 
 	.service-description {
 		width: 550px;
-		top: 190px;
+		top: 175px;
+		right: 185px;
 		padding: 0 20px 20px 90px;
 		color: #fff;
 		font-size: 13px;
@@ -641,15 +639,50 @@ header.carousel .fill {
 /* 404 Page Styles */
 
 .error-page {
-	background-image: url('../../Assets/img/404.jpg');
+	background-image: url('../../Assets/img/404.png');
 }
 
 .error-page .jumbotron {
 	background-color: transparent;
+	padding-top: 203px;
 }
 
-.error-404 {
-	color: #31393e;
+.error-text p {
+	position: absolute;
+	top: 180px;
+	left: 432px;
+	font-size: 14px;
+}
+
+.error-nav li a {
+	padding: 5px 10px;
+	color: #2c3e50;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.error-nav li a:hover {
+	background-color: #7f8c8d;
+	color: #fff;
+}
+
+.error-nav {
+	position: absolute;
+	top: 245px;
+	right: 199px;
+}
+
+.error-login {
+	position: absolute;
+	top: 320px;
+	left: 432px;
+	width: 320px;
+}
+
+.error-login p {
+	width: 100%;
+	top: -37px;
+	left: 136px;
 }
 
 /* Pricing Page Styles */
@@ -718,7 +751,8 @@ i.fa.fa-home {
 }
 
 .breadcrumb-nav {
-	padding: 10px 0 25px;
+	margin-left: -30px !important;
+	padding: 10px 0 0 0;
 }
 
 .hr-nav-line {
@@ -1058,13 +1092,13 @@ i.fa.fa-home {
 }
 
 .rajtech-bg-image {
-	background-image: url('../img/slider/raj.png');
+	background-image: url('../img/slider/asd.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: contain;
 	background-position-y: 50px;
 	width: 100%;
-	height: 130px;
+	height: 151px;
 	position: relative;
 }
 
@@ -1324,6 +1358,16 @@ i.fa.fa-home {
 
 .btn.btn-primary.view-product-btn {
 
+}
+
+.login-btn {
+    background-color: #16a085;
+    border-color: #168D76 !important;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    background-color: #1abc9c;
 }
 
 /* breadcrumb */

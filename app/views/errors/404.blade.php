@@ -11,53 +11,47 @@
         <div class="row">
 
             <div class="col-lg-12">
-                <div class="jumbotron">
-                    <h1><span class="error-404"><i style="color: #337AB7;" class="fa fa-meh-o"></i> Page not found</span></h1>
-                    <p class="error-404">Aw! Sorry... the page you are looking for can not be located.</p><br />
-					<p class="error-404">Maybe this links can help you:</p>
-                    <ul>
-						<li>
-							<a href="{{ URL::to('home') }}">Home</a>
+                <div class="jumbotron error-text">
+                    <p>You're looking for something that doesn't actually exist...<br/>Try these links:</p>
+                    <ul class="nav navbar-nav error-nav">
+                    	<li>
+	                        <a href="{{ URL::to('home') }}">Home</a>
+	                    </li>
+	                    <li>
+	                        <a href="{{ URL::to('about-us') }}">About</a>
+	                    </li>
+	                    <li>
+	                        <a href="{{ URL::to('services-page') }}">Services</a>
+	                    </li>
+	                    <li>
+	                        <a href="{{ URL::to('contact-page') }}">Contact Us</a>
+	                    </li>
+	                    <li class="dropdown disabled">
+	                        <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Products <b class="caret"></b></a>
+	                        <ul class="dropdown-menu">
+	                            <li>
+	                                <a href="{{ URL::to('products-detailed') }}">Detailed View</a>
+	                            </li>
+	                            <li>
+	                                <a href="{{ URL::to('products-grid') }}">Grid View</a>
+	                            </li>
+	                            <li>
+	                                <a href="{{ URL::to('products-gallery') }}">Gallery View</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+						<li class="disabled">
+							<a href="#" class="disabled">Compare List</a>
 						</li>
-                        <li>
-							<a href="{{ URL::to('about-us') }}">About</a>
-						</li>
-						<li>
-							<a href="{{ URL::to('services-page') }}">Services</a>
-						</li>
-						<li>
-							<a href="{{ URL::to('contact-page') }}">Contact</a>
-						</li>
-						<li>
-							<a>Products</a>
-							<ul>
-								<li>
-									<a href="{{ URL::to('products-detailed') }}">Detailed View</a>
-								</li>
-								<li>
-									<a href="{{ URL::to('products-grid') }}">Grid View</a>
-								</li>
-								<li>
-									<a href="{{ URL::to('products-gallery') }}">Gallery View</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="{{ URL::to('product-compare') }}">Compare List</a>
-						</li>
-						<li>
-							<a href="{{ URL::to('dashboard') }}">Login</a>
-						</li>
-                    </ul>
+	                </ul>
+					<div class="error-login">
+						<p>&mdash; or &mdash;</p>
+						<a href="{{ URL::to('dashboard') }}" class="btn btn-primary login-btn">Login</a>
+					</div>
                 </div>
             </div>
-
         </div>
-
-        <hr>
-
-@include('Pages.footer-snippet')
-
+	</div>
 </body>
 
 </html>
