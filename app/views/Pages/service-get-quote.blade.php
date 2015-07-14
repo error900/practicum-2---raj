@@ -8,10 +8,10 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container-fluid bg-plain">
+    <div class="container-fluid">
 
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row breadcrumb-nav">
+<!--         <div class="row breadcrumb-nav">
             <div class="col-lg-12">
                 <ol class="breadcrumb">
                     <li><a href="{{ URL::to('home') }}">Home</a>
@@ -19,13 +19,15 @@
                     <li class="active">Request Service Quote</li>
                 </ol>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
         <!-- Services Get a Quote Row -->
         <div class="row">
-			<div class="contact-form col-md-8 col-md-offset-2">
-                <h3 class="custom-header">Requested service - "{{ $Service_Spaces }}"</h3><hr />
+        	<div class="col-md-12">
+                <h1 class="text-center header1">Requested service - "{{ $Service_Spaces }}"</h1>
+            </div>
+			<div class="col-xs-12 col-md-4 col-md-offset-4 contact-form">
                 
 					@if ($errors->has())
 						<div class="alert alert-danger">
@@ -74,7 +76,6 @@
 					{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}
 
 					{{ Form::close() }}
-					
             </div>
         </div>
         <!-- /.row -->

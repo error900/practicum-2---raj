@@ -46,7 +46,7 @@
 	                </ul>
 					<div class="error-login">
 						<p>&mdash; or &mdash;</p>
-						<a href="{{ URL::to('dashboard') }}" class="btn btn-primary login-btn">Login</a>
+						<a href="{{ URL::to('dashboard') }}" class="btn btn-primary login-btn disabled">Login</a>
 					</div>
                 </div>
             </div>

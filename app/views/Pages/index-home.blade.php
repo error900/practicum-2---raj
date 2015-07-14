@@ -45,6 +45,16 @@
                 <p class="service-description">Solar technologies are an effective and increasingly economic choice as conventional energy prices rise. We have the capabilities to develop, construct, operate and optimise the operation of solar powered facilities.</p>
 
     		</a>
+            <img class="gearcc g1" src="{{ asset('Assets/img/slider/g1cc.png') }}">
+            <img class="gearcc g3" src="{{ asset('Assets/img/slider/g2cc.png') }}">
+            <img class="gearcc g5" src="{{ asset('Assets/img/slider/g3cc.png') }}">
+            <img class="gearcc g8" src="{{ asset('Assets/img/slider/g4cc.png') }}">
+            <img class="gearcc g10" src="{{ asset('Assets/img/slider/g5cc.png') }}">
+            <img class="gearc g2" src="{{ asset('Assets/img/slider/g1c.png') }}">
+            <img class="gearc g4" src="{{ asset('Assets/img/slider/g2c.png') }}">
+            <img class="gearc g6" src="{{ asset('Assets/img/slider/g3c.png') }}">
+            <img class="gearc g7" src="{{ asset('Assets/img/slider/g4c.png') }}">
+            <img class="gearc g9" src="{{ asset('Assets/img/slider/g5c.png') }}">
         </div>
     </div>
     <!-- Page Content -->
@@ -128,7 +138,6 @@
 
     <div class="container-fluid bg-plain">
         <div class="row">
-            <div class="col-md-12 hr-row-line"></div>
             <div class="col-md-12">
                 <h2 class="text-center header1">Products</h2>
             </div>
@@ -154,103 +163,7 @@
 
 @include('Pages.footer-snippet')
 
-    <script>
-        function mouseOver1() {
-            $("#image-icon2 + .gear").addClass("spincc");
-            $("#image-icon3 + .gear").addClass("spinc");
-            $("#image-icon4 + .gear").addClass("spincc");
-            $("#image-icon5 + .gear").addClass("spincc");
-        }
-
-        function mouseOut1() {
-            $("#image-icon2 + .gear").removeClass("spincc");
-            $("#image-icon3 + .gear").removeClass("spinc");
-            $("#image-icon4 + .gear").removeClass("spincc");
-            $("#image-icon5 + .gear").removeClass("spincc");
-        }
-
-        function mouseOver2() {
-            $("#image-icon1 + .gear").addClass("spinc");
-            $("#image-icon3 + .gear").addClass("spinc");
-            $("#image-icon4 + .gear").addClass("spincc");
-            $("#image-icon5 + .gear").addClass("spincc");
-        }
-
-        function mouseOut2() {
-            $("#image-icon1 + .gear").removeClass("spinc");
-            $("#image-icon3 + .gear").removeClass("spinc");
-            $("#image-icon4 + .gear").removeClass("spincc");
-            $("#image-icon5 + .gear").removeClass("spincc");
-        }
-
-        function mouseOver3() {
-            $("#image-icon1 + .gear").addClass("spinc");
-            $("#image-icon2 + .gear").addClass("spincc");
-            $("#image-icon4 + .gear").addClass("spincc");
-            $("#image-icon5 + .gear").addClass("spincc");
-        }
-
-        function mouseOut3() {
-            $("#image-icon1 + .gear").removeClass("spinc");
-            $("#image-icon2 + .gear").removeClass("spincc");
-            $("#image-icon4 + .gear").removeClass("spincc");
-            $("#image-icon5 + .gear").removeClass("spincc");
-        }
-
-        function mouseOver4() {
-            $("#image-icon1 + .gear").addClass("spinc");
-            $("#image-icon2 + .gear").addClass("spincc");
-            $("#image-icon3 + .gear").addClass("spinc");
-            $("#image-icon5 + .gear").addClass("spincc");
-        }
-
-        function mouseOut4() {
-            $("#image-icon1 + .gear").removeClass("spinc");
-            $("#image-icon2 + .gear").removeClass("spincc");
-            $("#image-icon3 + .gear").removeClass("spinc");
-            $("#image-icon5 + .gear").removeClass("spincc");
-        }
-
-        function mouseOver5() {
-            $("#image-icon1 + .gear").addClass("spinc");
-            $("#image-icon2 + .gear").addClass("spincc");
-            $("#image-icon3 + .gear").addClass("spinc");
-            $("#image-icon4 + .gear").addClass("spincc");
-        }
-
-        function mouseOut5() {
-            $("#image-icon1 + .gear").removeClass("spinc");
-            $("#image-icon2 + .gear").removeClass("spincc");
-            $("#image-icon3 + .gear").removeClass("spinc");
-            $("#image-icon4 + .gear").removeClass("spincc");
-        }
-
-        
-    </script>
-    <script type="text/javascript"> 
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            $('.services-offered').css({'opacity':(( 300-scroll )/300)});
-        });
-    </script>​
-    <script type="text/javascript"> 
-        $(window).scroll(function() { 
-            // The social div 
-            var $socialDiv = $('.hero_text'); 
-
-            //Get scroll position of window 
-            var windowScroll = $(this).scrollTop(); 
-
-            //Slow scroll of social div and fade it out 
-            $socialDiv.css({ 
-                'margin-top' : - (windowScroll / 3) + "px", 
-                'opacity' : 1 - (windowScroll / 550) 
-            }); 
-        }); 
-    </script>​
-
-    
-		
+<script src="{{ asset('Assets/js/services-icons.js') }}"></script>
 </body>
 
 </html>

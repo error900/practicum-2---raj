@@ -40,7 +40,9 @@
         <div class="col-md-12 hr-row-line"></div>
         <!-- Contact Form -->
         <div class="row contact-row">
-        	<h1 class="text-center header1">Keep in touch</h1>
+            <div class="col-md-12">
+        		<h1 class="text-center header1">Keep in touch</h1>
+            </div>
        		<!-- Contact Details Column -->
             <div class="col-md-5 col-md-offset-1 contact">
                 <div class="contact-details">
@@ -58,45 +60,37 @@
 					</p>
                 </div>
             </div>
-            <div class="col-md-12 hr-row-line"></div>
-
             <div class="contact-form col-md-5">
-            	<h1 class="text-center header1">Keep in touch</h1>
-<!-- 				@if ($errors->has())
+				@if ($errors->has())
 					<div class="alert alert-danger">
 						@foreach ($errors->all() as $error)
 							{{ $error }}<br>        
 						@endforeach
 					</div>
-				@endif -->
+				@endif
 									
 				{{ Form::open(array('action' => 'ContactController@contact_inquire')) }}
 				
 				<div class="form-group">
-					@if ($errors->has('name')) <span class="alert alert-danger">{{ $errors->first('name') }}</span> @endif	
 					{{ Form::text('name', Input::old('name'), array('class' => 'form-control', 'placeholder' => 'Full Name')) }}
 				</div>
 				
 				<div class="form-group">
-					@if ($errors->has('email')) <span class="alert alert-danger">{{ $errors->first('email') }}</span> @endif	
 					{{ Form::text('email', Input::old('email'), array('class' => 'form-control', 'placeholder' => 'Email Address')) }}
 				</div>
 				
 				<div class="form-group">
-					@if ($errors->has('subject')) <span class="alert alert-danger">{{ $errors->first('subject') }}</span> @endif	
 					{{ Form::text('subject', Input::old('subject'), array('class' => 'form-control', 'placeholder' => 'Subject')) }}
 				</div>
 				
 				<div class="form-group">
-					@if ($errors->has('message')) <span class="alert alert-danger">{{ $errors->first('message') }}</span> @endif	
 					{{ Form::textarea('message', Input::old('message'), array('class' => 'textarea form-control', 'rows' => '2', 'maxlength' => '1000', 'placeholder' => 'Message')) }}
 				</div>
 				
 				<center><div class="textarea_feedback"></div></center>
 				
 				<div class="form-group">
-					@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
-					{{ Form::recaptcha(array('theme' => 'white', 'use_ssl' => true)) }}
+					{{ Form::recaptcha(array('theme' => 'clean', 'use_ssl' => true)) }}
 				</div>
 				{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}
 

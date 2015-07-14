@@ -8,7 +8,7 @@
 @include('Pages.header-nav-snippet')
 
     <!-- Page Content -->
-    <div class="container-fluid bg-plain">
+    <div class="container-fluid about">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row breadcrumb-nav hidden-lg hidden-md">
@@ -23,7 +23,7 @@
         <!-- /.row -->
 
         <!-- Intro Content -->
-        <div class="row about">
+        <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center header1">RAJ Technologies Inc.</h1>
             </div>
@@ -32,22 +32,19 @@
                 <p>We aim to provide INTEGRATED IT Solutions. Continued growth has given us the opportunity to expand our interests and persistently improve our services.</p>
             </div>
         </div>
-        <div class="col-md-12 hr-row-line"></div>
-        <div class="row about">
+        <div class="row">
             <div class="col-xs-12 col-md-12 mission">
                 <h4>Our Mission</h4>
                 <p>To constantly strive to meet or surpass our customers' needs and expectations of services and to stay ahead of the competition by earning our customers' confidence and enthusiasm through continuous improvement driven by the integrity, teamwork, innovation and passion for excellence.</p>
             </div>
         </div>
-        <div class="col-md-12 hr-row-line"></div>
-        <div class="row about">
+        <div class="row">
             <div class="col-xs-12 col-md-12 vision">
                 <h4>Our Vision</h4>
                 <p>To provide top quality and effective technological outsourcing solutions and services through skilled, proficient and committed employees.</p>
             </div>
         </div>
-        <div class="col-md-12 hr-row-line"></div>
-        <div class="row about">
+        <div class="row">
             <div class="col-xs-12 col-md-12 responsibility">
                 <h4>Corporate Responsibility</h4>
                 <p>Our company will always be directed by the principles of Integrity and Discipline. This is the culture that we expect all our employees to grow into, live in and grow out from..                </p>
@@ -56,7 +53,6 @@
         <!-- /.row -->
 
         <!-- Authorize Partne<div class="row">
-            <div class="hr-row-line"></div>
             <div class="col-lg-12">
                 <h2 class="text-center header1">Authorized Partners</h2>
             </div>

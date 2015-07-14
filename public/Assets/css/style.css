@@ -312,6 +312,81 @@ p.services-definition {
 		height: inherit;
 	}
 
+	.services-offered .gearcc,
+	.services-offered .gearc {
+		position: absolute;
+	}
+
+	.gearcc.g1 {
+		top: 130px;
+		left: 445px;
+		height: 65px;
+		width: 65px;
+	}
+
+	.gearcc.g3 {
+		height: 60px;
+		width: 60px;
+		top: 136px;
+		left: 533px;
+	}
+
+	.gearcc.g5 {
+		height: 45px;
+		width: 45px;
+		bottom: 67px;
+		left: 547px;
+	}
+
+	.gearcc.g8 {
+		height: 61px;
+		width: 61px;
+		top: 202px;
+		left: 227px;
+	}
+
+	.gearcc.g10 {
+		height: 44px;
+		width: 44px;
+		bottom: 99px;
+		left: 249px;
+	}
+
+	.gearc.g2 {
+		height: 44px;
+		width: 44px;
+		top: 172px;
+		left: 498px;
+	}
+
+	.gearc.g4 {
+		height: 80px;
+		width: 80px;
+		bottom: 65px;
+		left: 472px;
+	}
+
+	.gearc.g6 {
+		height: 41px;
+		width: 41px;
+		bottom: 166px;
+		left: 367px;
+	}
+
+	.gearc.g7 {
+		height: 38px;
+		width: 38px;
+		top: 194px;
+		left: 283px;
+	}
+
+	.gearc.g9 {
+		height: 53px;
+		width: 53px;
+		bottom: 67px;
+		left: 281px;
+	}
+
 	#image-icon1,
 	#image-icon2,
 	#image-icon3,
@@ -390,8 +465,8 @@ p.services-definition {
 	#image-icon3 + .gear {
 		height: 116px;
 		width: 116px;
-		bottom: 118px;
-		left: 520px;
+		bottom: 114px;
+		left: 522px;
 	}
 
 	#image-icon4 + .gear {
@@ -606,6 +681,8 @@ body {
 body .row {
     margin-left: 0px;
     margin-right: 0px;
+	background-image: url('../img/divider1.png');
+	background-repeat: repeat-x;
 }
 
 .img-portfolio {
@@ -639,7 +716,7 @@ header.carousel .fill {
 /* 404 Page Styles */
 
 .error-page {
-	background-image: url('../../Assets/img/404.png');
+	background-image: url('../../Assets/img/404.jpg');
 }
 
 .error-page .jumbotron {
@@ -776,6 +853,10 @@ i.fa.fa-home {
 		padding-top: 80px;
 	}
 
+	body .row {
+		min-height: 300px;
+	}
+
 	.header1 {
 		  background-size: 400px 2px !important;
 	}
@@ -791,9 +872,8 @@ i.fa.fa-home {
 		left: 135px;
 	}
 
-	.about {
-		padding: 0 60px;
-		height: 250px;
+	.about .row{
+		padding: 50px 60px;
 	}
 
 	.about p {
@@ -803,7 +883,6 @@ i.fa.fa-home {
 
 	.about h4 {
 		margin: 0;
-		padding: 40px 20px 5px 20px;
 		font-size: 48px !important;
 	}
 
@@ -836,15 +915,15 @@ i.fa.fa-home {
 		background-repeat: no-repeat;
 		background-position-x: 70px;
 		background-size: contain;
-		padding-left: 300px;
+		padding: 20px 20px 20px 300px;
 	}
 
 	.contact-row {
 		margin: 55px 0 20px 0 !important;
-		height: 525px;
-		background-image: url('../img/envelope.jpg');
-		background-repeat: no-repeat;
-		background-size: 100% 525px;
+		min-height: 560px !important;
+		background-image: url('../img/envelope.jpg') !important;
+		background-repeat: no-repeat !important;
+		background-size: 100% 100%;
 	}
 
 	.contact {
@@ -876,7 +955,6 @@ i.fa.fa-home {
 	}
 
 	.contact-form {
-		margin: 0;
 		width: 470px;
 	}
 
@@ -1092,7 +1170,7 @@ i.fa.fa-home {
 }
 
 .rajtech-bg-image {
-	background-image: url('../img/slider/asd.png');
+	background-image: url('../img/slider/asd.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: contain;
