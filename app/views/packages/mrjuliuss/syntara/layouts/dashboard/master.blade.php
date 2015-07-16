@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" href="{{ asset('Assets/css/bootstrap.min.css') }}">
@@ -28,7 +29,7 @@
     </head>
     <body>
         @include(Config::get('syntara::views.header'))
-        {{ isset($breadcrumb) ? Breadcrumbs::create($breadcrumb) : ''; }}
+        <!-- {{ isset($breadcrumb) ? Breadcrumbs::create($breadcrumb) : ''; }} -->
         <div id="content">
             @yield('content')
         </div>
