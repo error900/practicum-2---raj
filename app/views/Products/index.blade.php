@@ -7,7 +7,7 @@ View Products
     <div id="breadcrumb">
         <a href= "{{ URL::to('dashboard') }}"><span>Dashboard</span></a>
         <span> > </span>
-        <a href="{{ URL::to('Products') }}"><span>Products</span></a>
+        <a href="{{ URL::to('Products') }}"  class="current"><span>Products</span></a>
     </div>
 
     <div class="content">

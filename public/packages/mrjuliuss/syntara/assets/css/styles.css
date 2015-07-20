@@ -64,7 +64,7 @@ a {
 /* breadcrumb */
 
 #breadcrumb {
-    background-color: #95a5a6 !important;
+    background-color: #9DA7AE !important;
     border: 0;
 }
 
@@ -75,12 +75,12 @@ a {
 }
 
 #breadcrumb a.current {
-    color: #fff !important;
+    color: #797F83 !important;
 }
 
 #breadcrumb a:hover,
 #breadcrumb a:hover > i {
-    color: #fff !important;
+    color: #335871 !important;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;

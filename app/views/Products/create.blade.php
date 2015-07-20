@@ -10,7 +10,7 @@ Create Product
 		<span> > </span>
 		<a href="{{ URL::to('Products') }}"><span>Products</span></a>
 		<span> > </span>
-		<a href="{{ URL::to('Products/createSCS') }}"><span>Create Product</span></a>
+		<a href="{{ URL::to('Products/createSCS') }}"  class="current"><span>Create Product</span></a>
 	</div>
 	
 	<div class="content">

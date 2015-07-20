@@ -10,7 +10,7 @@ Create Supplier/Category/Subcategory
 		<span> > </span>
 		<a href="{{ URL::to('Products') }}"><span>Products</span></a>
 		<span> > </span>
-		<a href="{{ URL::to('Products/createSCS') }}"><span>Create Supplier/Category/Subcategory</span></a>
+		<a href="{{ URL::to('Products/createSCS') }}"  class="current"><span>Create Supplier/Category/Subcategory</span></a>
 	</div>
 
 	<div class="content">
