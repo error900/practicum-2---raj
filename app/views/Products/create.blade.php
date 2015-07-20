@@ -1,14 +1,26 @@
-@extends(Config::get('syntara::views.master'))
+@extends('layouts.master')
+
+@section('title')
+Create Product
+@stop
 
 @section('content')
-<div class="content">
+	<div id="breadcrumb">
+		<a href= "{{ URL::to('dashboard') }}"><span>Dashboard</span></a>
+		<span> > </span>
+		<a href="{{ URL::to('Products') }}"><span>Products</span></a>
+		<span> > </span>
+		<a href="{{ URL::to('Products/createSCS') }}"><span>Create Product</span></a>
+	</div>
+	
+	<div class="content">
 
 			<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 			<div class="dashboard">
 			<div class="dashboard-inner">
 
-			<h2>Register a Product</h2>
+			<h2>Create a Product</h2>
 
 			<!-- if there are creation errors, they will show here -->
 			@if ($errors->has())
@@ -75,7 +87,7 @@
 					@if ($errors->has('stocks')) <p class="alert alert-danger">{{ $errors->first('stocks') }}</p> @endif
 				</div>
 
-				{{ Form::submit('Register the Product!', array('class' => 'btn btn-primary')) }}
+				{{ Form::submit('Create the Product!', array('class' => 'btn btn-primary')) }}
 
 			{{ Form::close() }}
 
@@ -83,10 +95,6 @@
 			</div>
 			</div>
 			</div>
-			</div>
+	</div>
 
-			<script src="{{ asset('Assets/js/jquery-1.11.2.min.js') }}"></script>
-			<script src="{{ asset('Assets/js/bootstrap.min.js') }}"></script>
-			<script src="{{ asset('packages/mrjuliuss/syntara/assets/js/dashboard/base.js') }}"></script>
-			<script src="{{ asset('Assets/js/scripts.js') }}"></script>
 @stop

@@ -39,15 +39,15 @@
                     </li>
                     @endif
                     @if($currentUser->isSuperUser())
-                    <!-- <li class=""><a href="{{ URL::route('Products.index') }}"><i class="fa fa-shopping-cart"></i> <span>Products</span></a></li> -->
-                    <li class="dropdown" >
+                    <li class=""><a href="{{ URL::route('Products.index') }}"><i class="fa fa-shopping-cart"></i> <span>Products</span></a></li>
+<!--                     <li class="dropdown" >
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-shoppping-cart"></i> <span>Products</span></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ URL::route('Products.index') }}"><span>View Products</span></a></li>
                             <li><a href="{{ URL::to('Products/create') }}"><span>Register Product</span></a></li>
                             <li><a href="{{ URL::to('Products/createSCS') }}"><span>Register Supplier / Category / SubCategory</span></a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     @endif
                 {{ (!empty($navPages)) ? $navPages : '' }}
                 @endif
