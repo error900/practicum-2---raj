@@ -134,7 +134,6 @@ header {
 }
 
 .contact-form {
-	margin: 20px 0;
 	padding: 0;
 }
 
@@ -1007,7 +1006,7 @@ i.fa.fa-home {
 		padding-left: 15px !important;
 		border-bottom: 2px solid transparent;
 		font-size: 13px !important;
-		color: #aaa !important;
+		color: #666 !important;
 	}
 
 	.navbar-inverse .navbar-nav>li>a:focus {
@@ -1018,7 +1017,6 @@ i.fa.fa-home {
 	.navbar-inverse .navbar-nav>li>a:hover {
 		background-color: transparent !important;
 		border-bottom: 2px solid #95a5a6;
-		color: #34495e !important;
 		text-shadow: none !important;
 		-webkit-transition: all 0.5s ease-in-out;
 		-moz-transition: all 0.5s ease-in-out;
