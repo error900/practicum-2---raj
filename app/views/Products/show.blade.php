@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-Product {{ $Product->brand }}
+	Product {{ $Product->brand}}
 @stop
 
 @section('content')
@@ -10,7 +10,7 @@ Product {{ $Product->brand }}
 		<span> > </span>
 		<a href="{{ URL::to('Products') }}"><span>Products</span></a>
 		<span> > </span>
-		<a href="{{ URL::to('{{$Product->brand}}') }}"  class="current"><span>Create Product</span></a>
+		<a href="{{ URL::to('Products') }}"  class="current"><span>Show Product</span></a>
 	</div>
 
 			<div class="content">

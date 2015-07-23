@@ -25,11 +25,11 @@
         <script src="{{ asset('packages/mrjuliuss/syntara/assets/js/dashboard/base.js') }}"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ (!empty($siteName)) ? $siteName : "Syntara"}} - {{isset($title) ? $title : '' }}</title>
+        <title>{{isset($title) ? $title : '' }} - {{ (!empty($siteName)) ? $siteName : "RAJ Technologies Inc."}}</title>
     </head>
     <body>
         @include(Config::get('syntara::views.header'))
-        <!-- {{ isset($breadcrumb) ? Breadcrumbs::create($breadcrumb) : ''; }} -->
+        {{ isset($breadcrumb) ? Breadcrumbs::create($breadcrumb) : ''; }}
         <div id="content">
             @yield('content')
         </div>

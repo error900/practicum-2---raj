@@ -1,3 +1,30 @@
+<table class="table table-striped table-bordered table-condensed">
+<thead>
+    <tr>
+        <th style="width:20px; text-align: center;">ID</th>
+        <th style="width:200px;">{{ trans('syntara::users.username') }}</th>
+        <th style="width:30px; text-align: center;">{{ trans('syntara::all.show') }}</th>
+        @if($currentUser->hasAccess(Config::get('syntara::permissions.addUserGroup')))
+        <th style="width:20px; text-align: center;"><input type="checkbox" class="check-all"></th>
+        @endif
+    </tr>
+</thead>
+<tbody>
+    @foreach ($users as $user)
+    <tr>
+        <td style="text-align: center;">{{ $user->getId() }}</td>
+        <td>&nbsp;{{ $user->username }}</td>
+        <td style="text-align: center;">&nbsp;<a href="{{ URL::route('showUser', $user->getId()); }}">{{ trans('syntara::all.show') }}</a></td>
+        @if($currentUser->hasAccess(Config::get('syntara::permissions.addUserGroup')))
+        <td style="text-align: center;">
+            <input type="checkbox" data-user-id="{{ $user->getId() }}">
+        </td>
+        @endif
+    </tr>
+    @endforeach
+</tbody>
+</table>
+
 <div class="row upper-menu" style="height: 35px;">
     {{ $users->links() }}
 
@@ -5,33 +32,6 @@
         <a id="delete-item" class="btn btn-danger users">{{ trans('syntara::all.delete') }}</a>
     </div>
 </div>
-
-<table class="table table-striped table-bordered table-condensed">
-<thead>
-    <tr>
-        @if($currentUser->hasAccess(Config::get('syntara::permissions.addUserGroup')))
-        <th style="width:20px; text-align: center;"><input type="checkbox" class="check-all"></th>
-        @endif
-        <th style="width:20px; text-align: center;">ID</th>
-        <th style="width:200px;">{{ trans('syntara::users.username') }}</th>
-        <th style="width:30px; text-align: center;">{{ trans('syntara::all.show') }}</th>
-    </tr>
-</thead>
-<tbody>
-    @foreach ($users as $user)
-    <tr>
-        @if($currentUser->hasAccess(Config::get('syntara::permissions.addUserGroup')))
-        <td style="text-align: center;">
-            <input type="checkbox" data-user-id="{{ $user->getId() }}">
-        </td>
-        @endif
-        <td style="text-align: center;">{{ $user->getId() }}</td>
-        <td>&nbsp;{{ $user->username }}</td>
-        <td style="text-align: center;">&nbsp;<a href="{{ URL::route('showUser', $user->getId()); }}">{{ trans('syntara::all.show') }}</a></td>
-    </tr>
-    @endforeach
-</tbody>
-</table>
 
 @if(!empty($candidateUsers) && $currentUser->hasAccess(Config::get('syntara::permissions.addUserGroup')))
 <div class="row">
