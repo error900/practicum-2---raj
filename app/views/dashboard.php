@@ -16,14 +16,30 @@
 
 								<tab>
 
-								<tab-heading>
-									<span>I/O</span>
-								</tab-heading>
+									<tab-heading>
+										<span>I/O</span>
+									</tab-heading>
 
-								<div class="dashboard-inner">
-
-								</div>
-								
+									<div class="dashboard-inner">
+										@if ($errors->has())
+											<div class="alert alert-danger">
+												@foreach ($errors->all() as $error)
+													{{ $error }}<br>        
+												@endforeach
+											</div>
+										@endif
+										
+										@if (Session::has('success'))
+											<div class="alert-box success">
+												<h2>{{ Session::get('success') }}</h2>
+											</div>
+										@endif
+										@if (Session::has('fail'))
+											<div class="alert-box fail">
+												<h2>{{ Session::get('fail') }}</h2>
+											</div>
+										@endif
+									</div>
 								</tab>
 
 								<tab>

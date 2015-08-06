@@ -89,9 +89,10 @@
 				
 				<center><div class="textarea_feedback"></div></center>
 				
-				<div class="form-group">
+				{{-- <div class="form-group">
 					{{ Form::recaptcha(array('theme' => 'clean', 'use_ssl' => true)) }}
-				</div>
+				</div> --}}
+				<div class="g-recaptcha" data-sitekey="6Lcdcf8SAAAAAFYGXXKG_VyPS1GYRUNYbQy9bDGv"></div>
 				{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}
 
 				{{ Form::close() }}

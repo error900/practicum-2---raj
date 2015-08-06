@@ -385,6 +385,12 @@ Route::post('updateStocks{id}', array(
 Route::resource('Products', 'ProductController', array('before' => 'csrf'));
 
 /*
+	Profile Photo controller
+*/
+
+Route::post('dashboard/user/{id}', array('uses' => 'ProfileController@postPhoto', 'as' => 'postPhoto'));
+
+/*
 	404 Error Page
 */
 

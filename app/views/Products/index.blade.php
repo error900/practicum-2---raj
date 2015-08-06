@@ -62,10 +62,9 @@ View Products
                                 <td>{{ $value->description }}</td>
                                 <td>{{ $value->supplier }}</td>
                                 <td>{{ $value->category }}</td>
-                                <td>{{ $value->sub_category }}</td>
                                 <td>Current Stock : {{ $value->stocks }}
                                     {{ Form::open(array('url' => 'updateStocks' . $value->id)) }}
-                                    <span class="pull-left">Modify Stock : {{ Form::number('stocks', Input::old('stocks'), array('width' => '100%')) }}</span><br />
+                                    <span class="pull-left">Increase/Decrease by: {{ Form::number('stocks', Input::old('stocks'), array('width' => '100% ')) }}</span><br />
                                     <span class="pull-left">{{ Form::submit('Update Stock') }}</span>
                                     {{ Form::close() }}
                                 </td>

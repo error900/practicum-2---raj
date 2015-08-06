@@ -27,25 +27,26 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <div class="form-group">
-                                <!-- <label class="control-label">{{ trans('syntara::users.username') }}</label> -->
+                                {{-- <label class="control-label">{{ trans('syntara::users.username') }}</label> --}}
                                 <input class="form-control" type="text" id="username" name="username" value="{{ $user->username}}">
                             </div>
                             <div class="form-group">
-                                <!-- <label class="control-label">{{ trans('syntara::all.email') }}</label> -->
+                                {{-- <label class="control-label">{{ trans('syntara::all.email') }}</label> --}}
                                 <input class="form-control" type="text" id="email" name="email" value="{{ $user->email }}">
                             </div>
                             <div class="form-group">
-                                <!-- <label class="control-label">{{ trans('syntara::all.password') }}</label> -->
+                                {{-- <label class="control-label">{{ trans('syntara::all.password') }}</label> --}}
                                 <input class="form-control" type="password" placeholder="{{ trans('syntara::all.password') }}" id="pass" name="pass" >
                             </div>
                             <div class="form-group">
-                                <!-- <label class="control-label">{{ trans('syntara::users.last-name') }}</label> -->
+                                {{-- <label class="control-label">{{ trans('syntara::users.last-name') }}</label> --}}
                                 <input class="form-control" type="text" id="last_name" name="last_name" value="{{ $user->last_name  }}">
                             </div>
                             <div class="form-group">
-                                <!-- <label class="control-label">{{ trans('syntara::users.first-name') }}</label> -->
+                                {{-- <label class="control-label">{{ trans('syntara::users.first-name') }}</label> --}}
                                 <input class="form-control" type="text" id="first_name" name="first_name" value="{{ $user->first_name }}">
                             </div>
+                            
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <div class="form-group">
@@ -82,6 +83,8 @@
                             </div>
                         </div>
                         @endif
+                        {{-- Adding the uploading of a profile picture --}}
+                        
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-md-12">

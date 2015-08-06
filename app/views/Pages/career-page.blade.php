@@ -92,8 +92,7 @@
 					</div>
 
 					<div class="form-group">
-						{{ Form::label('recaptcha_response_field', 'ReCaptcha :') }}@if ($errors->has('recaptcha_response_field')) <span class="alert alert-danger">{{ $errors->first('recaptcha_response_field') }}</span> @endif
-						{{ Form::recaptcha(array('theme' => 'clean', 'use_ssl' => true)) }}
+						<div class="g-recaptcha" data-sitekey="6Lcdcf8SAAAAAFYGXXKG_VyPS1GYRUNYbQy9bDGv"></div>
 					</div>
 					<br />
 					{{ Form::submit('Send', array('class' => 'btn btn-primary')) }}

@@ -8,7 +8,8 @@
 		"laravel/framework": "4.2.*",
 		"mrjuliuss/syntara": "1.2.*",
 		"sb89/recaptcha": "dev-master",
-		"gloudemans/shoppingcart": "~1.2"
+		"gloudemans/shoppingcart": "~1.2",
+		"google/recaptcha": "~1.1"
 	},
 	"autoload": {
 		"classmap": [
